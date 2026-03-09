@@ -399,6 +399,62 @@ const products = [
     specs: ['Sizes: 15 mm – 80 mm', 'Pressure: PN40', 'Material: Gun Metal LTB2', 'Seat: Reinforced PTFE'],
     image: '/images/products/gun-metal-ball-valve-ti3.jpg',
   },
+  {
+    name: 'Gun Metal Angle Valve (500 Series)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium 500-series gun metal angle valve with polished body for fire protection and boiler room installations. Enhanced flow coefficient with streamlined internal passages.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: Gun Metal LTB2', 'Connection: Screwed BSP'],
+    image: '/images/products/angle-valve-im-500.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve (500 Series)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium 500-series gun metal ball valve with full bore flow path. Quarter-turn lever operation with blow-out proof stem design for industrial and marine service.',
+    specs: ['Sizes: 15 mm – 80 mm', 'Pressure: PN25 / PN40', 'Material: Gun Metal LTB2', 'Seat: PTFE'],
+    image: '/images/products/ball-valve-im-500.jpg',
+  },
+  {
+    name: 'Gun Metal Ferrule Valve (500 Series)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium 500-series gun metal ferrule valve for high-specification water authority and municipal installations. Lock-shield spindle with enhanced tamper resistance.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/ferrule-valve-im-500.jpg',
+  },
+  {
+    name: 'Gun Metal Vertical Check Valve (500 Series)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium 500-series vertical check valve with precision-guided disc for reliable backflow prevention. Heavy wall thickness for high-rise building water supply systems.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/vertical-check-valve-im-500.jpg',
+  },
+  {
+    name: 'Gun Metal Football Valve (500 Series)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium 500-series football-type gun metal valve for underground water distribution networks. Spherical body with hand wheel operation for full bore isolation.',
+    specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/football-ball-valve-im-500.jpg',
+  },
+  {
+    name: 'Brass Ball Valve (500 Series)',
+    category: 'Brass Valves',
+    desc: 'Premium 500-series brass ball valve with chrome-plated ball and reinforced PTFE seats. Full bore design for minimal pressure drop in plumbing and gas systems.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Seat: Reinforced PTFE'],
+    image: '/images/products/brass-ball-valve-im-500.jpg',
+  },
+  {
+    name: 'Ball Gate Valve (500 Series)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium 500-series ball gate valve combining ball valve mechanism with gate valve body. Compact design for space-constrained pipeline installations.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Operation: Hand Wheel'],
+    image: '/images/products/ball-gate-valve-im-500.jpg',
+  },
+  {
+    name: 'Industrial Ball Valve (500 Series)',
+    category: 'Brass Valves',
+    desc: 'Premium 500-series industrial ball valve for process piping and utility systems. Anti-blow-out stem with fire-safe design for critical isolation applications.',
+    specs: ['Sizes: 15 mm – 100 mm', 'Pressure: PN40', 'Material: IS:319 Brass / Gun Metal', 'Seat: Reinforced PTFE'],
+    image: '/images/products/industrial-ball-valve-im-500.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -451,7 +507,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            54 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            62 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
