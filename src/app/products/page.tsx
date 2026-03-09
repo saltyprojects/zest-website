@@ -343,6 +343,62 @@ const products = [
     specs: ['Sizes: 25 mm – 100 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
     image: '/images/products/horizontal-oring-valve-ti.jpg',
   },
+  {
+    name: 'Gun Metal Football Valve (Premium)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium football-type gun metal valve with full bore design for underground water distribution mains. Spherical body geometry minimises pressure loss while ensuring complete shut-off.',
+    specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-football-valve-im3.jpg',
+  },
+  {
+    name: 'Industrial Ball Valve (Compact)',
+    category: 'Brass Valves',
+    desc: 'Compact industrial ball valve with reduced port design for space-constrained installations. Quarter-turn operation with locking handle for process control applications.',
+    specs: ['Sizes: 15 mm – 80 mm', 'Pressure: PN40', 'Material: IS:319 Brass / Gun Metal', 'Seat: Reinforced PTFE'],
+    image: '/images/products/industrial-ball-valve-im3.jpg',
+  },
+  {
+    name: 'Gun Metal Ferrule Valve (Standard)',
+    category: 'Gun Metal Valves',
+    desc: 'Standard-pattern gun metal ferrule valve for service connections to water mains. Lockshield type spindle with tamper-proof cap, suitable for underground installation.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gun-metal-ferrule-valve-im.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve (Utility)',
+    category: 'Gun Metal Valves',
+    desc: 'Utility-grade gun metal ball valve with full port bore for water supply and distribution. Stainless steel ball with PTFE seals for long service life in corrosive environments.',
+    specs: ['Sizes: 15 mm – 100 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Seat: PTFE / Delrin'],
+    image: '/images/products/gun-metal-ball-valve-im2.jpg',
+  },
+  {
+    name: 'Gun Metal Bib Ferrule Valve (Heavy)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-pattern gun metal bib ferrule valve for outdoor standpipe and hose connections. Cast body with union nut for easy ferrule attachment to PE/MDPE service pipes.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gunmetal-bib-ferrule-ti2.jpg',
+  },
+  {
+    name: 'Gun Metal Flush Cock (High Flow)',
+    category: 'Gun Metal Cocks',
+    desc: 'High-flow gun metal flush cock with large waterway for rapid cistern filling and flushing systems. Self-closing mechanism with adjustable flow rate for water conservation.',
+    specs: ['Sizes: 25 mm – 40 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Type: Self-Closing'],
+    image: '/images/products/gun-metal-flush-cock-ti4.jpg',
+  },
+  {
+    name: 'Industrial Angle Valve (Precision)',
+    category: 'Brass Valves',
+    desc: 'Precision-machined industrial angle valve with fine-finish body for throttling applications in steam and compressed air systems. Stellite-tipped disc for erosion resistance.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass Alloy', 'Trim: Stellite'],
+    image: '/images/products/industrial-angle-valve-ti4.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve (High Pressure)',
+    category: 'Gun Metal Valves',
+    desc: 'High-pressure gun metal ball valve rated for PN40 service. Trunnion-mounted ball with double block and bleed capability for critical isolation applications in process piping.',
+    specs: ['Sizes: 15 mm – 80 mm', 'Pressure: PN40', 'Material: Gun Metal LTB2', 'Seat: Reinforced PTFE'],
+    image: '/images/products/gun-metal-ball-valve-ti3.jpg',
+  },
 ]
 
 /* ── Schema ─── */
