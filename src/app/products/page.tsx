@@ -182,6 +182,27 @@ const products = [
     specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Thread: BSP'],
     image: '/images/products/gun-metal-bib-ferrule-valve.jpg',
   },
+  {
+    name: 'Gun Metal Flanged Check Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged-end gun metal check valves for large-diameter pipeline installations. Bolted bonnet design allows in-line maintenance. Suitable for waterworks, pumping stations, and fire protection mains.',
+    specs: ['Sizes: 50 mm to 200 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778 / IS:5312'],
+    image: '/images/products/gun-metal-check-valve-flanged.jpg',
+  },
+  {
+    name: 'Brass Angle Valves',
+    category: 'Brass Valves',
+    desc: 'Fine-finish brass angle valves for 90-degree flow control in plumbing and industrial piping. Compact design ideal for tight spaces. Chrome-plated option for exposed installations.',
+    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
+    image: '/images/products/brass-angle-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Check Valves (Screwed)',
+    category: 'Gun Metal Valves',
+    desc: 'Compact screwed-end gun metal check valves for service connections and branch lines. Swing-type disc for low pressure drop. Threaded BSP ends for easy installation.',
+    specs: ['Sizes: 15 mm to 80 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-check-valve.jpg',
+  },
 ]
 
 /* ── Schema ─── */
