@@ -15,35 +15,30 @@ const products = [
     name: 'Brass Valves',
     desc: 'High-quality brass ball valves, gate valves, and globe valves for industrial and domestic use.',
     icon: '/icons/valve.svg',
-    emoji: '🔧',
     image: '/images/products/brass-gate-valve.jpg',
   },
   {
     name: 'Brass Cocks',
     desc: 'Precision-engineered brass cocks for reliable flow control in plumbing systems.',
     icon: '/icons/cock.svg',
-    emoji: '🚰',
     image: '/images/products/brass-bibcock.jpg',
   },
   {
     name: 'Brass Fittings',
     desc: 'Complete range of brass fittings including elbows, tees, nipples, and connectors.',
     icon: '/icons/fitting.svg',
-    emoji: '⚙️',
     image: '/images/products/brass-fittings.jpg',
   },
   {
     name: 'Gun Metal Check Valves',
     desc: 'Heavy-duty gun metal check valves designed for high-pressure applications.',
     icon: '/icons/check.svg',
-    emoji: '🛡️',
     image: '/images/products/gun-metal-check-valve.jpg',
   },
   {
     name: 'Brass Unions',
     desc: 'Premium brass unions for easy pipe connections and maintenance.',
     icon: '/icons/union.svg',
-    emoji: '🔗',
     image: '/images/products/brass-union.jpg',
   },
 ]
@@ -79,32 +74,26 @@ const whyChoose = [
   {
     title: 'Quality Assured',
     desc: 'Every product undergoes rigorous quality testing — pressure tested, dimensionally inspected, and material verified.',
-    emoji: '✅',
   },
   {
     title: 'Competitive Pricing',
     desc: 'Direct manufacturer pricing with no middlemen. Best value for bulk and recurring orders.',
-    emoji: '💰',
   },
   {
     title: 'Timely Delivery',
     desc: 'Efficient manufacturing and logistics for on-time delivery across India and UAE.',
-    emoji: '🚚',
   },
   {
     title: 'Custom Manufacturing',
     desc: 'OEM capabilities — we manufacture to your exact drawings and specifications.',
-    emoji: '📐',
   },
   {
     title: '25+ Years Experience',
     desc: 'Quarter-century of brass manufacturing expertise from the industrial heart of India.',
-    emoji: '🏭',
   },
   {
     title: 'Export Ready',
     desc: 'International standard compliance and export documentation for seamless global trade.',
-    emoji: '🌍',
   },
 ]
 
@@ -203,7 +192,7 @@ export default function Home() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
               <article key={p.name} className="card group overflow-hidden">
-                <div className="relative -mx-6 -mt-6 mb-4 h-40 bg-navy/5">
+                <div className="relative -mx-6 -mt-6 mb-4 h-48 bg-navy/5">
                   <Image
                     src={p.image}
                     alt={p.name}
@@ -248,7 +237,7 @@ export default function Home() {
             {whyChoose.map((f) => (
               <div key={f.title} className="rounded-xl border border-gray-100 bg-white p-6 text-center shadow-sm">
                 <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-navy/5 text-3xl" aria-hidden="true">
-                  {f.emoji}
+                  
                 </div>
                 <h3 className="font-heading text-lg font-bold text-navy">{f.title}</h3>
                 <p className="mt-2 font-body text-sm text-gray-600">{f.desc}</p>
