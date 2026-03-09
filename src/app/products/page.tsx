@@ -329,6 +329,20 @@ const products = [
     specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Forged Brass', 'Trim: SS'],
     image: '/images/products/industrial-angle-valve-ti2.jpg',
   },
+  {
+    name: 'Industrial Angle Valve (Fine Finish)',
+    category: 'Brass Valves',
+    desc: 'Fine-finish industrial angle valve with precision-machined body and alloy internals. Designed for high-cycle industrial applications with superior corrosion resistance.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass Alloy', 'Finish: Fine Machined'],
+    image: '/images/products/industrial-angle-valve-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Horizontal O-Ring Valve (Heavy Pattern)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-pattern horizontal check valve with O-ring seal for enhanced leak prevention. Reinforced body design for high-pressure municipal water and fire protection systems.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/horizontal-oring-valve-ti.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -381,7 +395,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            45 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            46 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
