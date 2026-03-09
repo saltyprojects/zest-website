@@ -3,60 +3,82 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Products — Brass Valves, Cocks, Fittings & Unions',
-  description: 'Explore our complete range of brass valves, brass cocks, brass fittings, gun metal check valves, and brass unions. Premium quality, manufactured in Jalandhar, India.',
+  description:
+    'Explore our complete range of brass valves, brass cocks, brass fittings, gun metal check valves, and brass unions. Premium quality, manufactured in Jalandhar, India.',
   alternates: { canonical: 'https://zestvalves.com/products' },
 }
+
+/* ── Data ─── */
+
+const categories = [
+  'All',
+  'Brass Valves',
+  'Brass Cocks',
+  'Brass Fittings',
+  'Gun Metal Check Valves',
+  'Brass Unions',
+]
 
 const products = [
   {
     name: 'Brass Ball Valves',
     category: 'Brass Valves',
-    desc: 'Full bore and reduced bore brass ball valves available in sizes from ½" to 4". Ideal for water, gas, and oil applications. Chrome-plated and nickel-plated options available.',
-    specs: ['Sizes: ½" to 4"', 'Pressure: Up to 600 WOG', 'Temperature: -20°C to 180°C', 'Thread: BSP / NPT'],
+    desc: 'Full bore and reduced bore brass ball valves available in sizes from ½″ to 4″. Ideal for water, gas, and oil applications. Chrome-plated and nickel-plated options available.',
+    specs: ['Sizes: ½″ to 4″', 'Pressure: Up to 600 WOG', 'Temp: −20 °C to 180 °C', 'Thread: BSP / NPT'],
+    emoji: '🔧',
   },
   {
     name: 'Brass Gate Valves',
     category: 'Brass Valves',
     desc: 'Heavy-duty brass gate valves for full-flow applications. Non-rising stem design with hand wheel operation. Suitable for water supply and distribution systems.',
-    specs: ['Sizes: ½" to 3"', 'Pressure: PN16', 'Body: Forged Brass', 'End Connection: Threaded'],
+    specs: ['Sizes: ½″ to 3″', 'Pressure: PN16', 'Body: Forged Brass', 'End: Threaded'],
+    emoji: '🔧',
   },
   {
     name: 'Brass Bibcocks',
     category: 'Brass Cocks',
     desc: 'Premium brass bibcocks with polished chrome finish. Available in various designs for domestic and commercial plumbing installations.',
-    specs: ['Sizes: ½" and ¾"', 'Finish: Chrome / Natural Brass', 'Cartridge: Ceramic Disc', 'Warranty: 5 Years'],
+    specs: ['Sizes: ½″ and ¾″', 'Finish: Chrome / Natural', 'Cartridge: Ceramic Disc', 'Warranty: 5 Years'],
+    emoji: '🚰',
   },
   {
     name: 'Brass Stopcocks',
     category: 'Brass Cocks',
     desc: 'Precision-machined brass stopcocks for main water supply control. Quarter-turn operation for quick shut-off.',
-    specs: ['Sizes: ½" to 2"', 'Operation: Quarter Turn', 'Seal: PTFE', 'Application: Water Supply'],
+    specs: ['Sizes: ½″ to 2″', 'Operation: Quarter Turn', 'Seal: PTFE', 'Use: Water Supply'],
+    emoji: '🚰',
   },
   {
     name: 'Brass Pipe Fittings',
     category: 'Brass Fittings',
-    desc: 'Complete range of brass pipe fittings including elbows, tees, reducers, nipples, bushings, and connectors. Precision-threaded for leak-proof connections.',
-    specs: ['Sizes: ⅛" to 4"', 'Thread: BSP / NPT', 'Material: CZ121 / CW614N', 'Finish: Natural / Nickel Plated'],
+    desc: 'Complete range — elbows, tees, reducers, nipples, bushings, and connectors. Precision-threaded for leak-proof connections.',
+    specs: ['Sizes: ⅛″ to 4″', 'Thread: BSP / NPT', 'Material: CZ121 / CW614N', 'Finish: Natural / Nickel'],
+    emoji: '⚙️',
   },
   {
     name: 'Brass Compression Fittings',
     category: 'Brass Fittings',
-    desc: 'High-quality brass compression fittings for copper and plastic pipe systems. Easy installation without soldering.',
-    specs: ['Pipe Sizes: 8mm to 54mm', 'Standard: EN 1254', 'O-Ring: EPDM', 'Application: Plumbing / Heating'],
+    desc: 'High-quality compression fittings for copper and plastic pipe systems. Easy installation without soldering.',
+    specs: ['Pipes: 8 mm to 54 mm', 'Standard: EN 1254', 'O-Ring: EPDM', 'Use: Plumbing / Heating'],
+    emoji: '⚙️',
   },
   {
     name: 'Gun Metal Check Valves',
     category: 'Gun Metal Check Valves',
-    desc: 'Heavy-duty gun metal (bronze) check valves designed for high-pressure and corrosive environments. Spring-loaded and swing type available.',
-    specs: ['Sizes: ½" to 6"', 'Pressure: PN25', 'Material: LG2 / CC491K', 'Type: Swing / Spring'],
+    desc: 'Heavy-duty gun metal (bronze) check valves for high-pressure and corrosive environments. Spring-loaded and swing type available.',
+    specs: ['Sizes: ½″ to 6″', 'Pressure: PN25', 'Material: LG2 / CC491K', 'Type: Swing / Spring'],
+    emoji: '🛡️',
   },
   {
     name: 'Brass Union Fittings',
     category: 'Brass Unions',
-    desc: 'Premium brass union fittings for easy pipe assembly and disassembly. Available in male-female, female-female, and flare configurations.',
-    specs: ['Sizes: ¼" to 2"', 'Seal: Brass-to-Brass / PTFE', 'Thread: BSP / NPT', 'Application: Industrial / Plumbing'],
+    desc: 'Premium brass union fittings for easy pipe assembly and disassembly. Male-female, female-female, and flare configurations.',
+    specs: ['Sizes: ¼″ to 2″', 'Seal: Brass / PTFE', 'Thread: BSP / NPT', 'Use: Industrial / Plumbing'],
+    emoji: '🔗',
   },
 ]
+
+/* ── Schema ─── */
 
 const productSchema = {
   '@context': 'https://schema.org',
@@ -84,6 +106,8 @@ const breadcrumbSchema = {
   ],
 }
 
+/* ── Page ─── */
+
 export default function Products() {
   return (
     <>
@@ -91,31 +115,90 @@ export default function Products() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
-      <section className="bg-navy text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <nav className="text-sm text-gray-400 mb-4" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-brass">Home</Link> <span className="mx-2">/</span> <span className="text-brass">Products</span>
+      <section className="bg-navy py-16 text-white sm:py-20" aria-labelledby="products-hero">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <nav className="mb-4 font-body text-sm text-gray-400" aria-label="Breadcrumb">
+            <ol className="flex items-center gap-2">
+              <li><Link href="/" className="transition-colors duration-150 hover:text-brass">Home</Link></li>
+              <li aria-hidden="true">/</li>
+              <li className="text-brass" aria-current="page">Products</li>
+            </ol>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our <span className="text-brass">Products</span></h1>
-          <p className="text-xl text-gray-300 max-w-3xl">Premium brass valves, cocks, fittings, gun metal check valves, and brass unions — manufactured to international quality standards.</p>
+          <h1 id="products-hero" className="text-balance text-4xl font-bold sm:text-5xl">
+            Our <span className="text-brass">Products</span>
+          </h1>
+          <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
+            Premium brass valves, cocks, fittings, gun metal check valves, and brass
+            unions — manufactured to international quality standards in Jalandhar, India.
+          </p>
         </div>
       </section>
 
+      {/* Category pills (static — could become interactive with client component) */}
+      <div className="border-b border-gray-200 bg-white" role="navigation" aria-label="Product categories">
+        <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-4 sm:px-6 lg:px-8">
+          {categories.map((c, i) => (
+            <span
+              key={c}
+              className={`
+                inline-flex min-h-touch items-center whitespace-nowrap rounded-full px-5 py-2
+                font-heading text-sm font-semibold transition-colors duration-150
+                ${i === 0 ? 'bg-navy text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}
+              `}
+            >
+              {c}
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* Products Grid */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
-            {products.map(p => (
-              <article key={p.name} className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100">
-                <span className="text-sm font-semibold text-brass bg-brass/10 px-3 py-1 rounded-full">{p.category}</span>
-                <h2 className="text-2xl font-bold text-navy mt-3 mb-2">{p.name}</h2>
-                <p className="text-gray-600 mb-4">{p.desc}</p>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="text-sm font-bold text-navy mb-2">Specifications</h3>
-                  <ul className="grid grid-cols-2 gap-1 text-sm text-gray-600">
-                    {p.specs.map(s => <li key={s} className="flex items-start gap-1"><span className="text-brass">•</span>{s}</li>)}
+      <section className="bg-gray-50 py-16 sm:py-20" aria-label="Product listings">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8 md:grid-cols-2">
+            {products.map((p) => (
+              <article key={p.name} className="card group">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <span className="inline-flex items-center rounded-full bg-brass/10 px-3 py-1 font-heading text-xs font-semibold text-brass">
+                      {p.category}
+                    </span>
+                    <h2 className="mt-3 font-heading text-2xl font-bold text-navy">
+                      {p.name}
+                    </h2>
+                  </div>
+                  <div
+                    className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-navy/5 text-3xl transition-transform duration-200 group-hover:scale-110"
+                    aria-hidden="true"
+                  >
+                    {p.emoji}
+                  </div>
+                </div>
+
+                <p className="mt-3 font-body text-gray-600">{p.desc}</p>
+
+                <div className="mt-4 rounded-lg bg-gray-50 p-4">
+                  <h3 className="font-heading text-xs font-bold uppercase tracking-wider text-navy">
+                    Specifications
+                  </h3>
+                  <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 font-body text-sm text-gray-600">
+                    {p.specs.map((s) => (
+                      <li key={s} className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brass" aria-hidden="true" />
+                        {s}
+                      </li>
+                    ))}
                   </ul>
                 </div>
+
+                <Link
+                  href="/contact"
+                  className="mt-4 inline-flex min-h-touch items-center font-heading text-sm font-semibold text-brass transition-colors duration-150 hover:text-brass-dark"
+                  aria-label={`Request a quote for ${p.name}`}
+                >
+                  Request Quote
+                  <span className="ml-1 transition-transform duration-150 group-hover:translate-x-1" aria-hidden="true">→</span>
+                </Link>
               </article>
             ))}
           </div>
@@ -123,13 +206,23 @@ export default function Products() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need Custom Specifications?</h2>
-          <p className="text-gray-300 mb-8">We manufacture brass products to your exact requirements. Contact us for custom orders and bulk pricing.</p>
-          <Link href="/contact" className="bg-brass hover:bg-brass-dark text-white font-bold px-10 py-4 rounded-lg transition-colors text-lg inline-block">
-            Request a Quote
-          </Link>
+      <section className="bg-navy py-16 text-white sm:py-20" aria-labelledby="products-cta">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 id="products-cta" className="text-balance font-heading text-3xl font-bold md:text-4xl">
+            Need Custom Specifications?
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl font-body text-lg text-gray-300">
+            We manufacture brass products to your exact requirements. Contact us for custom
+            orders, OEM manufacturing, and bulk pricing.
+          </p>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <Link href="/contact" className="btn-primary text-lg !px-10 !py-4">
+              Request a Quote
+            </Link>
+            <a href="tel:+911812345678" className="btn-outline text-lg !px-10 !py-4 !border-white/30 !text-white hover:!bg-white/10">
+              📞 Call Now
+            </a>
+          </div>
         </div>
       </section>
     </>

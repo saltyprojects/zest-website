@@ -1,5 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; }
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply font-body text-gray-900 antialiased;
+    font-size: 16px;
+    line-height: 1.625;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+    line-height: 1.2;
+  }
+
+  /* Visible focus rings for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-brass ring-offset-2 ring-offset-white;
+    transition: box-shadow 150ms ease;
+  }
+
+  /* Readable line lengths */
+  p, li {
+    max-width: 75ch;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center font-heading font-bold
+           px-8 py-3 rounded-lg transition-all duration-200 ease-out
+           min-h-[44px] min-w-[44px] select-none;
+  }
+  .btn:active {
+    transform: scale(0.97);
+  }
+  .btn-primary {
+    @apply btn bg-brass hover:bg-brass-dark text-white shadow-md hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply btn border-2 border-brass text-brass hover:bg-brass hover:text-white;
+  }
+  .btn-white {
+    @apply btn bg-white text-navy hover:bg-gray-100 shadow-md;
+  }
+
+  .card {
+    @apply bg-white rounded-xl p-8 shadow-sm hover:shadow-lg
+           transition-shadow duration-200 ease-out border border-gray-100;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-heading font-bold text-navy text-center mb-4;
+  }
+  .section-subheading {
+    @apply text-gray-600 text-center mb-12 max-w-2xl mx-auto text-lg;
+  }
+
+  /* Skeleton loading placeholder */
+  .skeleton {
+    @apply bg-gray-200 rounded animate-pulse;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
