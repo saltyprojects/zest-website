@@ -304,7 +304,7 @@ export default function Home() {
               href="tel:+911812345678"
               className="btn-outline text-lg !px-10 !py-4 !border-white/30 !text-white hover:!bg-white/10"
             >
-              📞 Call Now
+              Call Now
             </a>
           </div>
         </div>

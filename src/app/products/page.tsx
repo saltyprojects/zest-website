@@ -126,6 +126,62 @@ const products = [
     specs: ['Sizes: 6 mm to 50 mm', 'Seal: Brass / PTFE', 'Thread: BSP / NPT', 'Material: IS:319 Brass'],
     image: '/images/products/brass-union.jpg',
   },
+  {
+    name: 'Gun Metal Tanker Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty gun metal tanker valves designed for water tanker and storage tank applications. Quick-opening lever operation with large flow capacity for rapid filling and discharge.',
+    specs: ['Sizes: 50 mm to 100 mm', 'Pressure: PN10 / PN16', 'Material: Gun Metal LTB2', 'Operation: Lever'],
+    image: '/images/products/gun-metal-tanker-valve.jpg',
+  },
+  {
+    name: 'Brass Bib Cocks',
+    category: 'Brass Cocks',
+    desc: 'Durable brass bib cocks for outdoor and utility plumbing connections. Hose union type with wall-mount flange. Chrome or natural brass finish available.',
+    specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Type: Hose Union'],
+    image: '/images/products/brass-bib-cock.jpg',
+  },
+  {
+    name: 'Gun Metal Ferrule Cocks',
+    category: 'Gun Metal Valves',
+    desc: 'Precision gun metal ferrule cocks for water meter connections and service line shut-off. Tamper-proof design with lock-shield option for utility installations.',
+    specs: ['Sizes: 15 mm to 25 mm', 'Operation: Quarter Turn', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gun-metal-ferrule-cock.jpg',
+  },
+  {
+    name: 'Gun Metal Flush Cocks',
+    category: 'Gun Metal Valves',
+    desc: 'Self-closing gun metal flush cocks for urinal and WC flushing systems. Adjustable flow rate with time-delay shut-off mechanism for water conservation.',
+    specs: ['Sizes: 25 mm & 32 mm', 'Type: Self-Closing', 'Material: Gun Metal LTB2', 'Flow: Adjustable'],
+    image: '/images/products/gun-metal-flush-cock.jpg',
+  },
+  {
+    name: 'Gun Metal Main Cocks',
+    category: 'Gun Metal Valves',
+    desc: 'Robust gun metal main cocks for mains water supply isolation. Designed for underground and above-ground service connections with corrosion-resistant construction.',
+    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Thread: BSP'],
+    image: '/images/products/gun-metal-main-cock.jpg',
+  },
+  {
+    name: 'Gun Metal Vertical O-Ring Check Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Gun metal vertical check valves with O-ring sealing for enhanced leak prevention. Designed for vertical riser installations in water supply and fire protection systems.',
+    specs: ['Sizes: 25 mm to 80 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-vertical-oring.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Full bore gun metal ball valves for high-pressure industrial and marine applications. Quarter-turn operation with blow-out proof stem and reinforced PTFE seats.',
+    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Seat: PTFE'],
+    image: '/images/products/gun-metal-ball-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Bib Ferrule Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Combined bib and ferrule valve in gun metal for compact service connections. Integrates shut-off and metering functions in a single unit for efficient installation.',
+    specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Thread: BSP'],
+    image: '/images/products/gun-metal-bib-ferrule-valve.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -273,7 +329,7 @@ export default function Products() {
               Request a Quote
             </Link>
             <a href="tel:+911812345678" className="btn-outline text-lg !px-10 !py-4 !border-white/30 !text-white hover:!bg-white/10">
-              📞 Call Now
+              Call Now
             </a>
           </div>
         </div>
