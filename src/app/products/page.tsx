@@ -231,6 +231,41 @@ const products = [
     specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Trim: SS'],
     image: '/images/products/industrial-angle-valve-ti.jpg',
   },
+  {
+    name: 'Industrial Ball Valve',
+    category: 'Brass Valves',
+    desc: 'Heavy-duty industrial brass ball valve for process piping and utility systems. Full-bore design minimises pressure drop. Suitable for water, gas, and compressed air.',
+    specs: ['Sizes: 15 mm – 100 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Seat: PTFE / Reinforced'],
+    image: '/images/products/industrial-ball-valve-im.jpg',
+  },
+  {
+    name: 'Gun Metal Ferrule Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Precision-machined gun metal ferrule valve for water meter installations and service line connections. Tamper-proof spindle with locking arrangement for utility use.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gunmetal-ferrule-valve-im.jpg',
+  },
+  {
+    name: 'Gun Metal Vertical Check Valve (Heavy Pattern)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-pattern vertical check valve with reinforced body and guided disc for high-rise water supply systems. Enhanced seat design for positive sealing at low differential pressures.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gunmetal-vertical-check-im.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve (Industrial)',
+    category: 'Gun Metal Valves',
+    desc: 'Industrial-grade gun metal ball valve with blow-out proof stem and anti-static device. Full bore design for marine, fire protection, and heavy industrial applications.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: Gun Metal LTB2', 'Seat: PTFE'],
+    image: '/images/products/gunmetal-ball-valve-im.jpg',
+  },
+  {
+    name: 'Brass Bib Cock (Heavy Duty)',
+    category: 'Brass Cocks',
+    desc: 'Heavy-duty brass bib cock with reinforced body for commercial and industrial plumbing. Extended spindle with T-head handle for easy operation. Wall-mount with backplate.',
+    specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
+    image: '/images/products/brass-bibcock.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -283,7 +318,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            30 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            36 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
