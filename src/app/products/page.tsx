@@ -455,6 +455,49 @@ const products = [
     specs: ['Sizes: 15 mm – 100 mm', 'Pressure: PN40', 'Material: IS:319 Brass / Gun Metal', 'Seat: Reinforced PTFE'],
     image: '/images/products/industrial-ball-valve-im-500.jpg',
   },
+  /* ── Brass Fittings ─── */
+  {
+    name: 'Brass Union (Screwed)',
+    category: 'Brass Fittings',
+    desc: 'Precision-machined brass union with male-female threaded ends for easy pipe assembly and disassembly. Chrome-finished with leak-proof brass-to-brass seat for plumbing and industrial piping.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Threads: BSP / NPT', 'Material: IS:319 Brass', 'Pressure: PN16'],
+    image: '/images/products/brass-union.jpg',
+  },
+  {
+    name: 'Brass Union (Heavy Duty)',
+    category: 'Brass Fittings',
+    desc: 'Heavy-duty brass union designed for high-pressure industrial applications. Forged body with precision ground seats ensures zero-leak performance under vibration and thermal cycling.',
+    specs: ['Sizes: 15 mm – 80 mm', 'Threads: BSP', 'Material: IS:319 Brass', 'Pressure: PN25'],
+    image: '/images/products/brass-union-ti.jpg',
+  },
+  {
+    name: 'Brass Fittings Assortment',
+    category: 'Brass Fittings',
+    desc: 'Complete range of brass pipe fittings including elbows, tees, nipples, reducers, and couplings. CNC machined from IS:319 brass rod stock for precise thread tolerances and reliable sealing.',
+    specs: ['Sizes: 6 mm – 100 mm', 'Threads: BSP / NPT', 'Material: IS:319 Brass', 'Types: Elbow, Tee, Nipple, Reducer'],
+    image: '/images/products/brass-fittings.jpg',
+  },
+  {
+    name: 'Gun Metal Union Cap',
+    category: 'Brass Fittings',
+    desc: 'Gun metal union cap for blanking off pipe ends in water supply and fire protection systems. Heavy wall construction with BSP threads, suitable for buried and exposed installations.',
+    specs: ['Sizes: 15 mm – 80 mm', 'Threads: BSP', 'Material: Gun Metal LTB2', 'Pressure: PN16 / PN25'],
+    image: '/images/products/gun-metal-union-cap.jpg',
+  },
+  {
+    name: 'Gun Metal Union Cap (Flanged)',
+    category: 'Brass Fittings',
+    desc: 'Flanged pattern gun metal union cap for high-pressure pipeline blanking. Drilled to IS:1538 flange dimensions with raised face for gasket sealing in municipal water systems.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Flange: IS:1538', 'Material: Gun Metal LTB2', 'Pressure: PN25'],
+    image: '/images/products/gun-metal-union-cap-fp.jpg',
+  },
+  {
+    name: 'Brass Union (Economy)',
+    category: 'Brass Fittings',
+    desc: 'Economy-grade brass union for general plumbing and domestic water supply installations. Clean machine finish with standard BSP threads for quick pipe assembly.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Threads: BSP', 'Material: IS:319 Brass', 'Pressure: PN10'],
+    image: '/images/products/brass-union-ti2.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -507,7 +550,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            62 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            68 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
