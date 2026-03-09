@@ -3,233 +3,169 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Products — Brass Valves, Cocks, Fittings & Unions',
+  title: 'Products — Brass Valves, Cocks, Fittings & Unions | Zest Industries',
   description:
-    'Explore our complete range of brass valves, brass cocks, brass fittings, gun metal check valves, and brass unions. Premium quality, manufactured in Jalandhar, India.',
+    'Explore our complete range of brass valves, gun metal check valves, brass cocks, fittings, and unions. Premium quality, manufactured in Jalandhar, India since 1998.',
   alternates: { canonical: 'https://zestvalves.com/products' },
 }
 
-/* ── Data ─── */
+/* ── Product Data (Real Zest Industries catalogue) ─── */
 
 const categories = [
   'All',
+  'Gun Metal Valves',
+  'Gun Metal Cocks',
   'Brass Valves',
   'Brass Cocks',
-  'Brass Fittings',
-  'Gun Metal Valves',
-  'Brass Unions',
 ]
 
 const products = [
   {
-    name: 'Brass Gate Valves',
-    category: 'Brass Valves',
-    desc: 'Heavy-duty brass gate valves for full-flow isolation in water supply and distribution systems. Non-rising stem design with hand wheel operation. Manufactured from IS:319 grade brass.',
-    specs: ['Sizes: 15 mm to 100 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
-    image: '/images/products/brass-gate-valve.jpg',
-  },
-  {
-    name: 'Brass Ball Valves',
-    category: 'Brass Valves',
-    desc: 'Full bore and reduced bore brass ball valves for water, gas, and oil applications. Quarter-turn operation with chrome or nickel plating options. IS:319 compliant.',
-    specs: ['Sizes: 6 mm to 50 mm', 'Pressure: PN25 / 600 WOG', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
-    image: '/images/products/brass-ball-valve.jpg',
-  },
-  {
-    name: 'Brass Check Valves',
-    category: 'Brass Valves',
-    desc: 'Horizontal and vertical brass check valves preventing backflow in plumbing and industrial systems. Spring-loaded disc design for reliable one-way flow control.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Type: Horizontal / Vertical', 'Material: IS:319 Brass', 'Standard: BS:5154'],
-    image: '/images/products/brass-check-valve.jpg',
-  },
-  {
-    name: 'Brass Bibcocks',
-    category: 'Brass Cocks',
-    desc: 'Premium brass bibcocks with polished chrome finish for domestic and commercial plumbing. Ceramic disc cartridge for drip-free operation.',
-    specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Cartridge: Ceramic Disc'],
-    image: '/images/products/brass-bibcock.jpg',
-  },
-  {
-    name: 'Brass Stopcocks & Ferrule Cocks',
-    category: 'Brass Cocks',
-    desc: 'Precision-machined brass stopcocks and ferrule cocks for main water supply control. Quarter-turn operation for quick shut-off. Available in all standard sizes.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Operation: Quarter Turn', 'Material: IS:319 Brass', 'Seal: PTFE'],
-    image: '/images/products/brass-stopcock.jpg',
-  },
-  {
-    name: 'Brass Pipe Fittings',
-    category: 'Brass Fittings',
-    desc: 'Complete range of elbows, tees, reducers, nipples, and connectors. Precision-threaded for leak-proof connections in plumbing and industrial piping.',
-    specs: ['Sizes: 6 mm to 100 mm', 'Thread: BSP / NPT', 'Material: IS:319 Brass', 'Finish: Natural / Nickel'],
-    image: '/images/products/brass-fittings.jpg',
-  },
-  {
-    name: 'Brass Wheel Valves',
-    category: 'Brass Valves',
-    desc: 'Precision brass wheel valves for flow regulation in plumbing and industrial pipelines. Hand wheel operated with rising stem for visual position indication. Forged brass body with durable bonnet seal.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
-    image: '/images/products/brass-wheel-valve.jpg',
-  },
-  {
-    name: 'Gun Metal Horizontal Check Valves',
+    name: 'Gun Metal Check Valve (Screwed)',
     category: 'Gun Metal Valves',
-    desc: 'Heavy-duty gun metal horizontal check valves manufactured to IS:778 standard. Designed for high-pressure water supply, fire-fighting, and industrial applications. LTB2 gun metal construction.',
-    specs: ['Sizes: 25 mm to 150 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    desc: 'Compact screwed-end gun metal check valve for service connections and branch lines. Swing-type disc for low pressure drop. ZEST branded with threaded BSP ends.',
+    specs: ['Sizes: 15 mm – 80 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-check-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Horizontal Check Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty horizontal check valve manufactured to IS:778 standard. Designed for high-pressure water supply, fire-fighting, and industrial applications.',
+    specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
     image: '/images/products/gun-metal-horizontal-check-valve.jpg',
   },
   {
-    name: 'Gun Metal Vertical Check Valves',
+    name: 'Gun Metal Vertical Check Valve',
     category: 'Gun Metal Valves',
-    desc: 'Vertical lift check valves in gun metal LTB2 for riser pipe installations. Gravity-assisted disc closure prevents backflow in vertical pipelines. Suitable for water supply and fire protection systems.',
-    specs: ['Sizes: 25 mm to 100 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    desc: 'Vertical lift check valve in gun metal LTB2 for riser pipe installations. Gravity-assisted disc closure prevents backflow in vertical pipelines.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
     image: '/images/products/gun-metal-vertical-check-valve.jpg',
   },
   {
-    name: 'Gun Metal Gate Valves',
+    name: 'Gun Metal Horizontal O-Ring Check Valve',
     category: 'Gun Metal Valves',
-    desc: 'Rugged gun metal gate valves for municipal water supply and distribution networks. Non-rising stem with hand wheel operation. Flanged or screwed end connections available.',
-    specs: ['Sizes: 25 mm to 150 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Ends: Flanged / Screwed'],
-    image: '/images/products/gun-metal-gate-valve.jpg',
+    desc: 'Horizontal check valve with O-ring seal technology for enhanced leak-tightness. Ideal for waterworks and fire protection systems.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/horizontal-oring-valve.jpg',
   },
   {
-    name: 'Gun Metal Angle Valves',
+    name: 'Gun Metal Vertical O-Ring Check Valve',
     category: 'Gun Metal Valves',
-    desc: 'Gun metal angle valves for applications requiring 90-degree flow direction change. Ideal for fire hydrant connections, boiler installations, and high-pressure industrial piping.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Connection: Screwed BSP'],
-    image: '/images/products/gun-metal-angle-valve.jpg',
-  },
-  {
-    name: 'Gun Metal Pressure Reducing Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Adjustable pressure reducing valves in gun metal construction for downstream pressure regulation. Diaphragm-operated with adjustable spring setting for precise pressure control.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Inlet: Up to 25 bar', 'Material: Gun Metal LTB2', 'Outlet: 1-6 bar adjustable'],
-    image: '/images/products/gun-metal-pressure-reducing-valve.jpg',
-  },
-  {
-    name: 'Gun Metal Wheel Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Heavy-duty gun metal wheel valves for industrial and marine applications. Hand wheel operated globe-type design for precise flow throttling. Renewable seat and disc for extended service life.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Thread: BSP'],
-    image: '/images/products/gun-metal-wheel-valve.jpg',
-  },
-  {
-    name: 'Gun Metal Union Caps',
-    category: 'Gun Metal Valves',
-    desc: 'Precision-machined gun metal union caps for pipeline end closure and maintenance access points. Three-piece design for easy disassembly without disturbing adjacent piping.',
-    specs: ['Sizes: 15 mm to 100 mm', 'Material: Gun Metal LTB2', 'Thread: BSP', 'Seal: Metal-to-Metal'],
-    image: '/images/products/gun-metal-union-cap.jpg',
-  },
-  {
-    name: 'Brass Union Fittings',
-    category: 'Brass Unions',
-    desc: 'Premium brass union fittings for easy pipe assembly and disassembly. Available in male-female, female-female, and flare configurations.',
-    specs: ['Sizes: 6 mm to 50 mm', 'Seal: Brass / PTFE', 'Thread: BSP / NPT', 'Material: IS:319 Brass'],
-    image: '/images/products/brass-union.jpg',
-  },
-  {
-    name: 'Gun Metal Tanker Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Heavy-duty gun metal tanker valves designed for water tanker and storage tank applications. Quick-opening lever operation with large flow capacity for rapid filling and discharge.',
-    specs: ['Sizes: 50 mm to 100 mm', 'Pressure: PN10 / PN16', 'Material: Gun Metal LTB2', 'Operation: Lever'],
-    image: '/images/products/gun-metal-tanker-valve.jpg',
-  },
-  {
-    name: 'Brass Bib Cocks',
-    category: 'Brass Cocks',
-    desc: 'Durable brass bib cocks for outdoor and utility plumbing connections. Hose union type with wall-mount flange. Chrome or natural brass finish available.',
-    specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Type: Hose Union'],
-    image: '/images/products/brass-bib-cock.jpg',
-  },
-  {
-    name: 'Gun Metal Ferrule Cocks',
-    category: 'Gun Metal Valves',
-    desc: 'Precision gun metal ferrule cocks for water meter connections and service line shut-off. Tamper-proof design with lock-shield option for utility installations.',
-    specs: ['Sizes: 15 mm to 25 mm', 'Operation: Quarter Turn', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
-    image: '/images/products/gun-metal-ferrule-cock.jpg',
-  },
-  {
-    name: 'Gun Metal Flush Cocks',
-    category: 'Gun Metal Valves',
-    desc: 'Self-closing gun metal flush cocks for urinal and WC flushing systems. Adjustable flow rate with time-delay shut-off mechanism for water conservation.',
-    specs: ['Sizes: 25 mm & 32 mm', 'Type: Self-Closing', 'Material: Gun Metal LTB2', 'Flow: Adjustable'],
-    image: '/images/products/gun-metal-flush-cock.jpg',
-  },
-  {
-    name: 'Gun Metal Main Cocks',
-    category: 'Gun Metal Valves',
-    desc: 'Robust gun metal main cocks for mains water supply isolation. Designed for underground and above-ground service connections with corrosion-resistant construction.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Thread: BSP'],
-    image: '/images/products/gun-metal-main-cock.jpg',
-  },
-  {
-    name: 'Gun Metal Vertical O-Ring Check Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Gun metal vertical check valves with O-ring sealing for enhanced leak prevention. Designed for vertical riser installations in water supply and fire protection systems.',
-    specs: ['Sizes: 25 mm to 80 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    desc: 'Vertical check valve with O-ring sealing for enhanced leak prevention in riser installations. Suitable for water supply and fire protection systems.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
     image: '/images/products/gun-metal-vertical-oring.jpg',
   },
   {
-    name: 'Gun Metal Ball Valves',
+    name: 'Gun Metal Flanged Check Valve',
     category: 'Gun Metal Valves',
-    desc: 'Full bore gun metal ball valves for high-pressure industrial and marine applications. Quarter-turn operation with blow-out proof stem and reinforced PTFE seats.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Seat: PTFE'],
+    desc: 'Flanged-end gun metal check valve for large-diameter pipeline installations. Bolted bonnet allows in-line maintenance. For waterworks, pumping stations, and fire mains.',
+    specs: ['Sizes: 50 mm – 200 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778 / IS:5312'],
+    image: '/images/products/gun-metal-check-valve-flanged.jpg',
+  },
+  {
+    name: 'Gun Metal Angle Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Gun metal angle valve for 90-degree flow direction change. Ideal for fire hydrant connections, boiler installations, and high-pressure industrial piping.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Connection: Screwed BSP'],
+    image: '/images/products/gun-metal-angle-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Gate Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Rugged gun metal gate valve for municipal water supply and distribution networks. Non-rising stem with hand wheel operation. Flanged or screwed ends.',
+    specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Ends: Flanged / Screwed'],
+    image: '/images/products/gun-metal-gate-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Full bore gun metal ball valve for high-pressure industrial and marine applications. Quarter-turn operation with blow-out proof stem and PTFE seats.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Seat: PTFE'],
     image: '/images/products/gun-metal-ball-valve.jpg',
   },
   {
-    name: 'Gun Metal Bib Ferrule Valves',
+    name: 'Gun Metal Wheel Valve',
     category: 'Gun Metal Valves',
-    desc: 'Combined bib and ferrule valve in gun metal for compact service connections. Integrates shut-off and metering functions in a single unit for efficient installation.',
+    desc: 'Heavy-duty gun metal wheel valve for industrial and marine applications. Hand wheel operated globe-type design for precise flow throttling.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Thread: BSP'],
+    image: '/images/products/gun-metal-wheel-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Regulating Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Precision gun metal regulating valve for accurate flow control and throttling. Globe-type design with fine adjustment capability for stable downstream flow.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Thread: BSP'],
+    image: '/images/products/gunmetal-regulating-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Pressure Reducing Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Adjustable pressure reducing valve in gun metal for downstream pressure regulation. Diaphragm-operated with adjustable spring setting.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Inlet: Up to 25 bar', 'Material: Gun Metal LTB2', 'Outlet: 1–6 bar adjustable'],
+    image: '/images/products/gun-metal-pressure-reducing-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Tanker Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty gun metal tanker valve for water tanker and storage tank applications. Quick-opening lever operation with large flow capacity.',
+    specs: ['Sizes: 50 mm – 100 mm', 'Pressure: PN10 / PN16', 'Material: Gun Metal LTB2', 'Operation: Lever'],
+    image: '/images/products/gun-metal-tanker-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Foot Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Gun metal foot valve with strainer for pump suction lines. Prevents loss of prime in centrifugal pump installations. Heavy-duty construction for bore well and sump use.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN10 / PN16', 'Material: Gun Metal LTB2', 'Type: Flanged / Screwed'],
+    image: '/images/products/gun-metal-foot-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Union Cap',
+    category: 'Gun Metal Valves',
+    desc: 'Precision-machined gun metal union cap for pipeline end closure and maintenance access. Three-piece design for easy disassembly.',
+    specs: ['Sizes: 15 mm – 100 mm', 'Material: Gun Metal LTB2', 'Thread: BSP', 'Seal: Metal-to-Metal'],
+    image: '/images/products/gun-metal-union-cap.jpg',
+  },
+  {
+    name: 'Gun Metal Bib Ferrule Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Combined bib and ferrule valve in gun metal for compact service connections. Integrates shut-off and metering functions in a single unit.',
     specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Thread: BSP'],
     image: '/images/products/gun-metal-bib-ferrule-valve.jpg',
   },
   {
-    name: 'Gun Metal Flanged Check Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Flanged-end gun metal check valves for large-diameter pipeline installations. Bolted bonnet design allows in-line maintenance. Suitable for waterworks, pumping stations, and fire protection mains.',
-    specs: ['Sizes: 50 mm to 200 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778 / IS:5312'],
-    image: '/images/products/gun-metal-check-valve-flanged.jpg',
+    name: 'Gun Metal Ferrule Cock',
+    category: 'Gun Metal Cocks',
+    desc: 'Precision gun metal ferrule cock for water meter connections and service line shut-off. Tamper-proof design with lock-shield option for utility installations.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Operation: Quarter Turn', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gun-metal-ferrule-cock.jpg',
   },
   {
-    name: 'Brass Angle Valves',
+    name: 'Gun Metal Flush Cock',
+    category: 'Gun Metal Cocks',
+    desc: 'Self-closing gun metal flush cock for urinal and WC flushing systems. Adjustable flow rate with time-delay shut-off for water conservation.',
+    specs: ['Sizes: 25 mm & 32 mm', 'Type: Self-Closing', 'Material: Gun Metal LTB2', 'Flow: Adjustable'],
+    image: '/images/products/gun-metal-flush-cock.jpg',
+  },
+  {
+    name: 'Gun Metal Main Cock',
+    category: 'Gun Metal Cocks',
+    desc: 'Robust gun metal main cock for mains water supply isolation. For underground and above-ground service connections with corrosion-resistant construction.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Thread: BSP'],
+    image: '/images/products/gun-metal-main-cock.jpg',
+  },
+  {
+    name: 'Brass Wheel Valve',
     category: 'Brass Valves',
-    desc: 'Fine-finish brass angle valves for 90-degree flow control in plumbing and industrial piping. Compact design ideal for tight spaces. Chrome-plated option for exposed installations.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
-    image: '/images/products/brass-angle-valve.jpg',
+    desc: 'Precision brass wheel valve for flow regulation in plumbing and industrial pipelines. Hand wheel operated with rising stem for visual position indication.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
+    image: '/images/products/brass-wheel-valve.jpg',
   },
   {
-    name: 'Gun Metal Check Valves (Screwed)',
-    category: 'Gun Metal Valves',
-    desc: 'Compact screwed-end gun metal check valves for service connections and branch lines. Swing-type disc for low pressure drop. Threaded BSP ends for easy installation.',
-    specs: ['Sizes: 15 mm to 80 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
-    image: '/images/products/gun-metal-check-valve.jpg',
-  },
-  {
-    name: 'Gun Metal Foot Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Gun metal foot valves with strainer for pump suction lines. Prevents loss of prime in centrifugal pump installations. Heavy-duty construction for long service life in bore well and sump applications.',
-    specs: ['Sizes: 25 mm to 100 mm', 'Pressure: PN10 / PN16', 'Material: Gun Metal LTB2', 'Type: Flanged / Screwed'],
-    image: '/images/products/gun-metal-foot-valve.jpg',
-  },
-  {
-    name: 'Gun Metal Regulating Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Precision gun metal regulating valves for accurate flow control and throttling in water supply and industrial systems. Globe-type design with fine adjustment capability for stable downstream flow.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Thread: BSP'],
-    image: '/images/products/gunmetal-regulating-valve.jpg',
-  },
-  {
-    name: 'Gun Metal Horizontal O-Ring Check Valves',
-    category: 'Gun Metal Valves',
-    desc: 'Horizontal check valves with O-ring seal technology for enhanced leak-tightness. Designed for horizontal pipeline installations where reliable backflow prevention is critical. Suitable for waterworks and fire protection.',
-    specs: ['Sizes: 25 mm to 100 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
-    image: '/images/products/gun-metal-horizontal-oring.jpg',
-  },
-  {
-    name: 'Industrial Angle Valves',
-    category: 'Brass Valves',
-    desc: 'Fine-finish industrial angle valves for high-performance 90-degree flow control. Precision-machined from solid brass stock with chrome plating option. Ideal for process piping, HVAC, and fire protection systems.',
-    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN25', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
-    image: '/images/products/industrial-angle-valve-ti.jpg',
+    name: 'Brass Bib Cock',
+    category: 'Brass Cocks',
+    desc: 'Durable brass bib cock for outdoor and utility plumbing connections. Hose union type with wall-mount flange. Chrome or natural brass finish.',
+    specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Type: Hose Union'],
+    image: '/images/products/brass-bib-cock.jpg',
   },
 ]
 
@@ -283,13 +219,13 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            Premium brass valves, cocks, fittings, gun metal check valves, and brass
-            unions — manufactured to international quality standards in Jalandhar, India.
+            21 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
       </section>
 
-      {/* Category pills (static — could become interactive with client component) */}
+      {/* Category pills */}
       <div className="border-b border-gray-200 bg-white" role="navigation" aria-label="Product categories">
         <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-4 sm:px-6 lg:px-8">
           {categories.map((c, i) => (
@@ -310,39 +246,37 @@ export default function Products() {
       {/* Products Grid */}
       <section className="bg-gray-50 py-16 sm:py-20" aria-label="Product listings">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
               <article key={p.name} className="card group overflow-hidden">
-                <div className="relative -mx-6 -mt-6 mb-4 h-48 bg-navy/5">
+                <div className="relative -mx-6 -mt-6 mb-4 h-56 bg-white">
                   <Image
                     src={p.image}
                     alt={p.name}
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain p-2"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <span className="inline-flex items-center rounded-full bg-brass/10 px-3 py-1 font-heading text-xs font-semibold text-brass">
-                      {p.category}
-                    </span>
-                    <h2 className="mt-3 font-heading text-2xl font-bold text-navy">
-                      {p.name}
-                    </h2>
-                  </div>
+                <div>
+                  <span className="inline-flex items-center rounded-full bg-brass/10 px-3 py-1 font-heading text-xs font-semibold text-brass">
+                    {p.category}
+                  </span>
+                  <h2 className="mt-3 font-heading text-lg font-bold text-navy">
+                    {p.name}
+                  </h2>
                 </div>
 
-                <p className="mt-3 font-body text-gray-600">{p.desc}</p>
+                <p className="mt-2 font-body text-sm text-gray-600">{p.desc}</p>
 
-                <div className="mt-4 rounded-lg bg-gray-50 p-4">
+                <div className="mt-4 rounded-lg bg-gray-50 p-3">
                   <h3 className="font-heading text-xs font-bold uppercase tracking-wider text-navy">
                     Specifications
                   </h3>
-                  <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 font-body text-sm text-gray-600">
+                  <ul className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1 font-body text-xs text-gray-600">
                     {p.specs.map((s) => (
-                      <li key={s} className="flex items-start gap-2">
-                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brass" aria-hidden="true" />
+                      <li key={s} className="flex items-start gap-1.5">
+                        <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-brass" aria-hidden="true" />
                         {s}
                       </li>
                     ))}
@@ -370,8 +304,8 @@ export default function Products() {
             Need Custom Specifications?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl font-body text-lg text-gray-300">
-            We manufacture brass products to your exact requirements. Contact us for custom
-            orders, OEM manufacturing, and bulk pricing.
+            We manufacture brass and gun metal products to your exact requirements.
+            Contact us for custom orders, OEM manufacturing, and bulk pricing.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary text-lg !px-10 !py-4">

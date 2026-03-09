@@ -12,34 +12,29 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    name: 'Brass Valves',
-    desc: 'High-quality brass ball valves, gate valves, and globe valves for industrial and domestic use.',
-    icon: '/icons/valve.svg',
-    image: '/images/products/brass-gate-valve.jpg',
-  },
-  {
-    name: 'Brass Cocks',
-    desc: 'Precision-engineered brass cocks for reliable flow control in plumbing systems.',
-    icon: '/icons/cock.svg',
-    image: '/images/products/brass-bibcock.jpg',
-  },
-  {
-    name: 'Brass Fittings',
-    desc: 'Complete range of brass fittings including elbows, tees, nipples, and connectors.',
-    icon: '/icons/fitting.svg',
-    image: '/images/products/brass-fittings.jpg',
-  },
-  {
     name: 'Gun Metal Check Valves',
-    desc: 'Heavy-duty gun metal check valves designed for high-pressure applications.',
-    icon: '/icons/check.svg',
+    desc: 'IS:778 standard horizontal and vertical check valves in LTB2 gun metal for water supply and fire protection.',
     image: '/images/products/gun-metal-check-valve.jpg',
   },
   {
-    name: 'Brass Unions',
-    desc: 'Premium brass unions for easy pipe connections and maintenance.',
-    icon: '/icons/union.svg',
-    image: '/images/products/brass-union.jpg',
+    name: 'Gun Metal Angle Valves',
+    desc: 'Heavy-duty angle valves for fire hydrant connections, boilers, and high-pressure industrial piping.',
+    image: '/images/products/gun-metal-angle-valve.jpg',
+  },
+  {
+    name: 'Brass Wheel Valves',
+    desc: 'Precision brass wheel valves for flow regulation in plumbing and industrial pipelines.',
+    image: '/images/products/brass-wheel-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Gate Valves',
+    desc: 'Rugged gate valves for municipal water supply and distribution networks.',
+    image: '/images/products/gun-metal-gate-valve.jpg',
+  },
+  {
+    name: 'Brass Bib Cocks',
+    desc: 'Premium brass bib cocks for domestic and commercial plumbing with chrome finish.',
+    image: '/images/products/brass-bib-cock.jpg',
   },
 ]
 
