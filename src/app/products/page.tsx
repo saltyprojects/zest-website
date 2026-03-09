@@ -203,6 +203,34 @@ const products = [
     specs: ['Sizes: 15 mm to 80 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
     image: '/images/products/gun-metal-check-valve.jpg',
   },
+  {
+    name: 'Gun Metal Foot Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Gun metal foot valves with strainer for pump suction lines. Prevents loss of prime in centrifugal pump installations. Heavy-duty construction for long service life in bore well and sump applications.',
+    specs: ['Sizes: 25 mm to 100 mm', 'Pressure: PN10 / PN16', 'Material: Gun Metal LTB2', 'Type: Flanged / Screwed'],
+    image: '/images/products/gun-metal-foot-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Regulating Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Precision gun metal regulating valves for accurate flow control and throttling in water supply and industrial systems. Globe-type design with fine adjustment capability for stable downstream flow.',
+    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Thread: BSP'],
+    image: '/images/products/gunmetal-regulating-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Horizontal O-Ring Check Valves',
+    category: 'Gun Metal Valves',
+    desc: 'Horizontal check valves with O-ring seal technology for enhanced leak-tightness. Designed for horizontal pipeline installations where reliable backflow prevention is critical. Suitable for waterworks and fire protection.',
+    specs: ['Sizes: 25 mm to 100 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-horizontal-oring.jpg',
+  },
+  {
+    name: 'Industrial Angle Valves',
+    category: 'Brass Valves',
+    desc: 'Fine-finish industrial angle valves for high-performance 90-degree flow control. Precision-machined from solid brass stock with chrome plating option. Ideal for process piping, HVAC, and fire protection systems.',
+    specs: ['Sizes: 15 mm to 50 mm', 'Pressure: PN25', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
+    image: '/images/products/industrial-angle-valve-ti.jpg',
+  },
 ]
 
 /* ── Schema ─── */
