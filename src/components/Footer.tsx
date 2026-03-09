@@ -80,7 +80,7 @@ export default function Footer() {
             <address className="flex flex-col gap-3 font-body text-sm not-italic text-gray-300">
               <div className="flex gap-3">
                 <span aria-hidden="true" className="text-brass">📍</span>
-                <span>Industrial Area, Jalandhar<br />Punjab 144001, India</span>
+                <span>Industrial Area, Jalandhar<br />Punjab 144008, India</span>
               </div>
               <div className="flex gap-3">
                 <span aria-hidden="true" className="text-brass">📞</span>

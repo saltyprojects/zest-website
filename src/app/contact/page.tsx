@@ -22,7 +22,7 @@ const contactInfo = [
     icon: '📍',
     label: 'Address',
     content: 'Industrial Area, Jalandhar',
-    sub: 'Punjab 144001, India',
+    sub: 'Punjab 144008, India',
     href: undefined as string | undefined,
   },
   {

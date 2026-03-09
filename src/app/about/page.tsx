@@ -28,10 +28,10 @@ const capabilities = [
 ]
 
 const certifications = [
+  { name: 'IS:778', desc: 'Gun Metal Valves & Fittings' },
+  { name: 'IS:319', desc: 'Free Cutting Brass Standard' },
+  { name: 'BS:5154', desc: 'British Standard for Copper Alloy Valves' },
   { name: 'ISO 9001:2015', desc: 'Quality Management System' },
-  { name: 'IS 778', desc: 'Indian Standard for Brass Valves' },
-  { name: 'BS 5154', desc: 'British Standard for Copper Alloy Valves' },
-  { name: 'DIN 3357', desc: 'German Standard for Valves' },
 ]
 
 const breadcrumb = {
@@ -90,19 +90,25 @@ export default function About() {
               </h2>
               <div className="mt-6 space-y-4 font-body text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 1998 in Jalandhar, Punjab — the brass capital of India —
-                  Zest Industries began with a vision to manufacture world-class brass
-                  valves and fittings at competitive prices.
+                  Founded in 1998 in Jalandhar, Punjab — historically renowned as the
+                  brass capital and sports goods hub of India — Zest Industries began
+                  with a vision to manufacture world-class brass valves and fittings
+                  at competitive prices from the heart of India&apos;s industrial
+                  metalworking belt.
                 </p>
                 <p>
-                  Over the past 25+ years, we have grown from a small workshop to a
-                  fully-equipped manufacturing facility with CNC machines, automated
-                  quality testing, and a dedicated team of skilled engineers and craftsmen.
+                  Over the past 25+ years, we have grown from a small workshop in
+                  Jalandhar&apos;s Industrial Area to a fully-equipped manufacturing
+                  facility with CNC machines, automated quality testing, and a dedicated
+                  team of skilled engineers and craftsmen. Every product is manufactured
+                  from IS:319 grade brass and gun metal LTB2, meeting IS:778, BS:5154,
+                  and other international quality standards.
                 </p>
                 <p>
-                  Today, we serve clients across India and the UAE, providing a
-                  comprehensive range of brass valves, cocks, fittings, gun metal check
-                  valves, and unions that meet the highest international quality standards.
+                  Today, we serve 500+ clients across India and export to Dubai, UAE,
+                  and Africa — providing a comprehensive range of brass valves, cocks,
+                  fittings, gun metal horizontal check valves, and unions trusted by
+                  plumbing contractors, industrial suppliers, and government projects.
                 </p>
               </div>
 

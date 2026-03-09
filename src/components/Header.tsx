@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect, useCallback } from 'react'
 
@@ -42,12 +43,14 @@ export default function Header() {
           className="flex items-center gap-3 rounded-lg p-1 transition-opacity duration-150 hover:opacity-90"
           aria-label="Zest Industries — Home"
         >
-          <div
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-brass font-heading text-lg font-bold text-navy"
+          <Image
+            src="/images/logo-white.svg"
+            alt=""
+            width={44}
+            height={44}
+            className="h-11 w-auto"
             aria-hidden="true"
-          >
-            Z
-          </div>
+          />
           <div className="hidden sm:block">
             <div className="font-heading text-lg font-bold leading-tight">
               Zest Industries

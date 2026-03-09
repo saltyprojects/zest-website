@@ -43,7 +43,7 @@ const organizationSchema = {
     streetAddress: 'Industrial Area',
     addressLocality: 'Jalandhar',
     addressRegion: 'Punjab',
-    postalCode: '144001',
+    postalCode: '144008',
     addressCountry: 'IN',
   },
   contactPoint: {
