@@ -12,11 +12,6 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    name: 'Brass Gate Valves',
-    desc: 'Heavy-duty IS:319 brass gate valves for full-flow isolation in water supply and distribution systems.',
-    image: '/images/products/brass-gate-valve.jpg',
-  },
-  {
     name: 'Gun Metal Check Valves',
     desc: 'IS:778 standard horizontal and vertical check valves in LTB2 gun metal for water supply and fire protection.',
     image: '/images/products/gun-metal-check-valve.jpg',
@@ -27,9 +22,9 @@ const products = [
     image: '/images/products/gun-metal-angle-valve.jpg',
   },
   {
-    name: 'Brass Ball Valves',
-    desc: 'Full bore brass ball valves for water, gas, and oil. Quarter-turn operation with chrome plating options.',
-    image: '/images/products/brass-ball-valve.jpg',
+    name: 'Brass Wheel Valves',
+    desc: 'Precision brass wheel valves for flow regulation in plumbing and industrial pipelines.',
+    image: '/images/products/brass-wheel-valve.jpg',
   },
   {
     name: 'Gun Metal Gate Valves',
@@ -37,9 +32,9 @@ const products = [
     image: '/images/products/gun-metal-gate-valve.jpg',
   },
   {
-    name: 'Brass Pipe Fittings',
-    desc: 'Complete range of elbows, tees, reducers, nipples, and connectors for plumbing and industrial piping.',
-    image: '/images/products/brass-fittings.jpg',
+    name: 'Brass Bib Cocks',
+    desc: 'Premium brass bib cocks for domestic and commercial plumbing with chrome finish.',
+    image: '/images/products/brass-bib-cock.jpg',
   },
 ]
 

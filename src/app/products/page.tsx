@@ -13,12 +13,10 @@ export const metadata: Metadata = {
 
 const categories = [
   'All',
-  'Brass Valves',
-  'Brass Cocks',
-  'Brass Fittings',
   'Gun Metal Valves',
   'Gun Metal Cocks',
-  'Brass Unions',
+  'Brass Valves',
+  'Brass Cocks',
 ]
 
 const products = [
@@ -156,27 +154,6 @@ const products = [
     image: '/images/products/gun-metal-main-cock.jpg',
   },
   {
-    name: 'Brass Gate Valve',
-    category: 'Brass Valves',
-    desc: 'Heavy-duty brass gate valve for full-flow isolation in water supply and distribution systems. Non-rising stem design with hand wheel operation. Manufactured from IS:319 grade brass.',
-    specs: ['Sizes: 15 mm – 100 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
-    image: '/images/products/brass-gate-valve.jpg',
-  },
-  {
-    name: 'Brass Ball Valve',
-    category: 'Brass Valves',
-    desc: 'Full bore and reduced bore brass ball valves for water, gas, and oil applications. Quarter-turn operation with chrome or nickel plating options. IS:319 compliant.',
-    specs: ['Sizes: 6 mm – 50 mm', 'Pressure: PN25 / 600 WOG', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
-    image: '/images/products/brass-ball-valve.jpg',
-  },
-  {
-    name: 'Brass Check Valve',
-    category: 'Brass Valves',
-    desc: 'Horizontal and vertical brass check valves preventing backflow in plumbing and industrial systems. Spring-loaded disc design for reliable one-way flow control.',
-    specs: ['Sizes: 15 mm – 50 mm', 'Type: Horizontal / Vertical', 'Material: IS:319 Brass', 'Standard: BS:5154'],
-    image: '/images/products/brass-check-valve.jpg',
-  },
-  {
     name: 'Brass Wheel Valve',
     category: 'Brass Valves',
     desc: 'Precision brass wheel valve for flow regulation in plumbing and industrial pipelines. Hand wheel operated with rising stem for visual position indication.',
@@ -184,46 +161,11 @@ const products = [
     image: '/images/products/brass-wheel-valve.jpg',
   },
   {
-    name: 'Brass Angle Valve',
-    category: 'Brass Valves',
-    desc: 'Fine-finish brass angle valve for 90-degree flow control in plumbing and industrial piping. Compact design ideal for tight spaces. Chrome-plated option for exposed installations.',
-    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
-    image: '/images/products/brass-angle-valve.jpg',
-  },
-  {
-    name: 'Brass Bibcock',
-    category: 'Brass Cocks',
-    desc: 'Premium brass bibcock with polished chrome finish for domestic and commercial plumbing. Ceramic disc cartridge for drip-free operation.',
-    specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Cartridge: Ceramic Disc'],
-    image: '/images/products/brass-bibcock.jpg',
-  },
-  {
     name: 'Brass Bib Cock',
     category: 'Brass Cocks',
     desc: 'Durable brass bib cock for outdoor and utility plumbing connections. Hose union type with wall-mount flange. Chrome or natural brass finish.',
     specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Type: Hose Union'],
     image: '/images/products/brass-bib-cock.jpg',
-  },
-  {
-    name: 'Brass Stopcock',
-    category: 'Brass Cocks',
-    desc: 'Precision-machined brass stopcock for main water supply control. Quarter-turn operation for quick shut-off. Available in all standard sizes with PTFE seals.',
-    specs: ['Sizes: 15 mm – 50 mm', 'Operation: Quarter Turn', 'Material: IS:319 Brass', 'Seal: PTFE'],
-    image: '/images/products/brass-stopcock.jpg',
-  },
-  {
-    name: 'Brass Pipe Fittings',
-    category: 'Brass Fittings',
-    desc: 'Complete range of elbows, tees, reducers, nipples, and connectors. Precision-threaded for leak-proof connections in plumbing and industrial piping.',
-    specs: ['Sizes: 6 mm – 100 mm', 'Thread: BSP / NPT', 'Material: IS:319 Brass', 'Finish: Natural / Nickel'],
-    image: '/images/products/brass-fittings.jpg',
-  },
-  {
-    name: 'Brass Union Fitting',
-    category: 'Brass Unions',
-    desc: 'Premium brass union fittings for easy pipe assembly and disassembly. Available in male-female, female-female, and flare configurations.',
-    specs: ['Sizes: 6 mm – 50 mm', 'Seal: Brass / PTFE', 'Thread: BSP / NPT', 'Material: IS:319 Brass'],
-    image: '/images/products/brass-union.jpg',
   },
 ]
 
@@ -277,7 +219,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            30 premium brass and gun metal products — valves, cocks, fittings, and unions manufactured
+            21 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
