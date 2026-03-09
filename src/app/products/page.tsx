@@ -266,6 +266,69 @@ const products = [
     specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
     image: '/images/products/brass-bibcock.jpg',
   },
+  {
+    name: 'Ball Gate Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Combined ball-gate valve in gun metal for versatile pipeline isolation. Compact design integrates ball valve mechanism with gate valve body for space-constrained installations.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Operation: Hand Wheel'],
+    image: '/images/products/ball-gate-valve-im.jpg',
+  },
+  {
+    name: 'Gun Metal Angle Valve (Heavy Pattern)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-pattern gun metal angle valve for fire hydrant risers and boiler connections. Reinforced body with integral strainer option for demanding service conditions.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: Gun Metal LTB2', 'Thread: BSP'],
+    image: '/images/products/gun-metal-angle-valve-im.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve (Marine Grade)',
+    category: 'Gun Metal Valves',
+    desc: 'Marine-grade gun metal ball valve tested for seawater applications. Quarter-turn lever operation with corrosion-resistant internals for shipboard and offshore installations.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Seat: PTFE / Delrin'],
+    image: '/images/products/gun-metal-ball-valve-im.jpg',
+  },
+  {
+    name: 'Gun Metal Ferrule Valve (Utility Pattern)',
+    category: 'Gun Metal Valves',
+    desc: 'Utility-pattern gun metal ferrule valve with lock-shield spindle for water authority installations. Tamper-proof locking cap prevents unauthorised operation.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gun-metal-ferrule-valve-im2.jpg',
+  },
+  {
+    name: 'Gun Metal Vertical Check Valve (Utility)',
+    category: 'Gun Metal Valves',
+    desc: 'Utility-grade vertical check valve with reinforced disc guide for consistent backflow prevention. Suitable for water supply risers and pump discharge lines.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-vertical-check-im2.jpg',
+  },
+  {
+    name: 'Brass Ball Valve (Economy)',
+    category: 'Brass Valves',
+    desc: 'Economy-series brass ball valve for residential and light commercial plumbing. Nickel-plated body with chrome ball and PTFE seats for reliable shut-off.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Seat: PTFE'],
+    image: '/images/products/brass-ball-valve-im2.jpg',
+  },
+  {
+    name: 'Gun Metal Football Valve (Heavy)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty football-type gun metal valve for underground water mains. Spherical body provides full bore flow with minimal turbulence. Hand wheel or key operation.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-football-valve-im2.jpg',
+  },
+  {
+    name: 'Industrial Ball Valve (Heavy Duty)',
+    category: 'Brass Valves',
+    desc: 'Heavy-duty industrial ball valve for chemical process and utility applications. Reinforced body with anti-blow-out stem and fire-safe design certification.',
+    specs: ['Sizes: 15 mm – 100 mm', 'Pressure: PN40', 'Material: IS:319 Brass / Gun Metal', 'Seat: Reinforced PTFE'],
+    image: '/images/products/industrial-ball-valve-im2.jpg',
+  },
+  {
+    name: 'Industrial Angle Valve (Forged)',
+    category: 'Brass Valves',
+    desc: 'Forged brass industrial angle valve with fine-finish machining for high-pressure steam and process piping. Integral backseat and replaceable disc for extended service life.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Forged Brass', 'Trim: SS'],
+    image: '/images/products/industrial-angle-valve-ti2.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -318,7 +381,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            36 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            45 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
