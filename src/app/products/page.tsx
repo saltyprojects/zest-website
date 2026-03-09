@@ -17,6 +17,7 @@ const categories = [
   'Gun Metal Cocks',
   'Brass Valves',
   'Brass Cocks',
+  'Brass Fittings',
 ]
 
 const products = [
@@ -167,6 +168,69 @@ const products = [
     specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Type: Hose Union'],
     image: '/images/products/brass-bib-cock.jpg',
   },
+  {
+    name: 'Brass Gate Valve',
+    category: 'Brass Valves',
+    desc: 'Heavy-duty brass gate valve for full-bore isolation in plumbing, water supply, and industrial piping systems. Rising stem with hand wheel operation.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
+    image: '/images/products/brass-gate-valve.jpg',
+  },
+  {
+    name: 'Brass Ball Valve',
+    category: 'Brass Valves',
+    desc: 'Full-bore brass ball valve with quarter-turn lever operation. Chrome-plated ball with PTFE seats ensures leak-free shut-off in water and gas systems.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Seat: PTFE'],
+    image: '/images/products/brass-ball-valve.jpg',
+  },
+  {
+    name: 'Brass Angle Valve',
+    category: 'Brass Valves',
+    desc: 'Precision brass angle valve for 90-degree flow direction change in plumbing and heating installations. Wall-mount or in-line configuration.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Thread: BSP'],
+    image: '/images/products/brass-angle-valve.jpg',
+  },
+  {
+    name: 'Brass Check Valve',
+    category: 'Brass Valves',
+    desc: 'Compact brass spring-loaded check valve for backflow prevention. Low cracking pressure with silent closing action for residential and commercial plumbing.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Type: Spring-Loaded'],
+    image: '/images/products/brass-check-valve.jpg',
+  },
+  {
+    name: 'Brass Stop Cock',
+    category: 'Brass Cocks',
+    desc: 'Premium brass stop cock for mains water isolation. Compression or screwed ends with chrome or natural brass finish. Suitable for underground and above-ground installations.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Finish: Chrome / Natural'],
+    image: '/images/products/brass-stopcock.jpg',
+  },
+  {
+    name: 'Brass Union',
+    category: 'Brass Valves',
+    desc: 'Three-piece brass union for easy pipeline disassembly and maintenance. Precision machined threads with metal-to-metal or fibre washer seal.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Material: IS:319 Brass', 'Thread: BSP / NPT', 'Seal: Metal / Fibre'],
+    image: '/images/products/brass-union.jpg',
+  },
+  {
+    name: 'Brass Fittings Assortment',
+    category: 'Brass Valves',
+    desc: 'Complete range of brass pipe fittings including elbows, tees, reducers, nipples, and bushings. Precision threaded to BSP and NPT standards.',
+    specs: ['Sizes: 6 mm – 50 mm', 'Material: IS:319 Brass', 'Thread: BSP / NPT', 'Types: Elbows, Tees, Reducers'],
+    image: '/images/products/brass-fittings.jpg',
+  },
+  {
+    name: 'Gun Metal Football Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Traditional football-type gun metal valve for water distribution networks. Robust spherical body design with hand wheel operation for reliable isolation.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gunmetal-football-valve-im.jpg',
+  },
+  {
+    name: 'Industrial Angle Valve',
+    category: 'Brass Valves',
+    desc: 'Heavy-duty industrial angle valve for high-pressure process piping. Forged brass body with stainless steel trim for extended service life.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Trim: SS'],
+    image: '/images/products/industrial-angle-valve-ti.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -219,7 +283,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            21 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            30 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
