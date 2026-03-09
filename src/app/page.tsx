@@ -16,30 +16,35 @@ const products = [
     desc: 'High-quality brass ball valves, gate valves, and globe valves for industrial and domestic use.',
     icon: '/icons/valve.svg',
     emoji: '🔧',
+    image: '/images/products/brass-gate-valve.png',
   },
   {
     name: 'Brass Cocks',
     desc: 'Precision-engineered brass cocks for reliable flow control in plumbing systems.',
     icon: '/icons/cock.svg',
     emoji: '🚰',
+    image: '/images/products/brass-bibcock.png',
   },
   {
     name: 'Brass Fittings',
     desc: 'Complete range of brass fittings including elbows, tees, nipples, and connectors.',
     icon: '/icons/fitting.svg',
     emoji: '⚙️',
+    image: '/images/products/brass-fittings.png',
   },
   {
     name: 'Gun Metal Check Valves',
     desc: 'Heavy-duty gun metal check valves designed for high-pressure applications.',
     icon: '/icons/check.svg',
     emoji: '🛡️',
+    image: '/images/products/gun-metal-check-valve.png',
   },
   {
     name: 'Brass Unions',
     desc: 'Premium brass unions for easy pipe connections and maintenance.',
     icon: '/icons/union.svg',
     emoji: '🔗',
+    image: '/images/products/brass-union.png',
   },
 ]
 
@@ -113,7 +118,7 @@ export default function Home() {
         {/* Background image with overlay */}
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80"
+            src="/images/products/hero-valves.jpg"
             alt=""
             fill
             priority
@@ -197,12 +202,15 @@ export default function Home() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
-              <article key={p.name} className="card group">
-                <div
-                  className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-brass/10 text-3xl transition-transform duration-200 group-hover:scale-110"
-                  aria-hidden="true"
-                >
-                  {p.emoji}
+              <article key={p.name} className="card group overflow-hidden">
+                <div className="relative -mx-6 -mt-6 mb-4 h-40 bg-navy/5">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
                 <h3 className="font-heading text-xl font-bold text-navy">{p.name}</h3>
                 <p className="mt-2 font-body text-gray-600">{p.desc}</p>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Products — Brass Valves, Cocks, Fittings & Unions',
@@ -25,56 +26,56 @@ const products = [
     category: 'Brass Valves',
     desc: 'Heavy-duty brass gate valves for full-flow isolation in water supply and distribution systems. Non-rising stem design with hand wheel operation. Manufactured from IS:319 grade brass.',
     specs: ['Sizes: 15 mm to 100 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
-    emoji: '🔧',
+    image: '/images/products/brass-gate-valve.png',
   },
   {
     name: 'Brass Ball Valves',
     category: 'Brass Valves',
     desc: 'Full bore and reduced bore brass ball valves for water, gas, and oil applications. Quarter-turn operation with chrome or nickel plating options. IS:319 compliant.',
     specs: ['Sizes: 6 mm to 50 mm', 'Pressure: PN25 / 600 WOG', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
-    emoji: '🔧',
+    image: '/images/products/brass-ball-valve.png',
   },
   {
     name: 'Brass Check Valves',
     category: 'Brass Valves',
     desc: 'Horizontal and vertical brass check valves preventing backflow in plumbing and industrial systems. Spring-loaded disc design for reliable one-way flow control.',
     specs: ['Sizes: 15 mm to 50 mm', 'Type: Horizontal / Vertical', 'Material: IS:319 Brass', 'Standard: BS:5154'],
-    emoji: '🔧',
+    image: '/images/products/brass-check-valve.png',
   },
   {
     name: 'Brass Bibcocks',
     category: 'Brass Cocks',
     desc: 'Premium brass bibcocks with polished chrome finish for domestic and commercial plumbing. Ceramic disc cartridge for drip-free operation.',
     specs: ['Sizes: 15 mm & 20 mm', 'Finish: Chrome / Natural', 'Material: IS:319 Brass', 'Cartridge: Ceramic Disc'],
-    emoji: '🚰',
+    image: '/images/products/brass-bibcock.png',
   },
   {
     name: 'Brass Stopcocks & Ferrule Cocks',
     category: 'Brass Cocks',
     desc: 'Precision-machined brass stopcocks and ferrule cocks for main water supply control. Quarter-turn operation for quick shut-off. Available in all standard sizes.',
     specs: ['Sizes: 15 mm to 50 mm', 'Operation: Quarter Turn', 'Material: IS:319 Brass', 'Seal: PTFE'],
-    emoji: '🚰',
+    image: '/images/products/brass-stopcock.png',
   },
   {
     name: 'Brass Pipe Fittings',
     category: 'Brass Fittings',
     desc: 'Complete range of elbows, tees, reducers, nipples, and connectors. Precision-threaded for leak-proof connections in plumbing and industrial piping.',
     specs: ['Sizes: 6 mm to 100 mm', 'Thread: BSP / NPT', 'Material: IS:319 Brass', 'Finish: Natural / Nickel'],
-    emoji: '⚙️',
+    image: '/images/products/brass-fittings.png',
   },
   {
     name: 'Gun Metal Horizontal Check Valves',
     category: 'Gun Metal Check Valves',
     desc: 'Heavy-duty gun metal check valves manufactured to IS:778 standard. Designed for high-pressure water supply, fire-fighting, and industrial applications. LTB2 gun metal construction.',
     specs: ['Sizes: 25 mm to 150 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
-    emoji: '🛡️',
+    image: '/images/products/gun-metal-check-valve.png',
   },
   {
     name: 'Brass Union Fittings',
     category: 'Brass Unions',
     desc: 'Premium brass union fittings for easy pipe assembly and disassembly. Available in male-female, female-female, and flare configurations.',
     specs: ['Sizes: 6 mm to 50 mm', 'Seal: Brass / PTFE', 'Thread: BSP / NPT', 'Material: IS:319 Brass'],
-    emoji: '🔗',
+    image: '/images/products/brass-union.png',
   },
 ]
 
@@ -157,7 +158,16 @@ export default function Products() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-2">
             {products.map((p) => (
-              <article key={p.name} className="card group">
+              <article key={p.name} className="card group overflow-hidden">
+                <div className="relative -mx-6 -mt-6 mb-4 h-48 bg-navy/5">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <span className="inline-flex items-center rounded-full bg-brass/10 px-3 py-1 font-heading text-xs font-semibold text-brass">
@@ -166,12 +176,6 @@ export default function Products() {
                     <h2 className="mt-3 font-heading text-2xl font-bold text-navy">
                       {p.name}
                     </h2>
-                  </div>
-                  <div
-                    className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-navy/5 text-3xl transition-transform duration-200 group-hover:scale-110"
-                    aria-hidden="true"
-                  >
-                    {p.emoji}
                   </div>
                 </div>
 

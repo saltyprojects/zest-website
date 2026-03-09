@@ -52,7 +52,7 @@ export default function About() {
       <section className="relative bg-navy py-16 text-white sm:py-20" aria-labelledby="about-hero">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80"
+            src="/images/products/factory.jpg"
             alt=""
             fill
             priority
