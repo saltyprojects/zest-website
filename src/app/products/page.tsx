@@ -211,6 +211,20 @@ const products = [
     image: '/images/products/brass-fittings.jpg',
   },
   {
+    name: 'Brass Reducing Union',
+    category: 'Brass Fittings',
+    desc: 'Precision machined brass reducing union for joining pipes of different diameters. Three-piece design allows easy installation and maintenance without disturbing the pipeline.',
+    specs: ['Sizes: 15 mm x 10 mm – 50 mm x 40 mm', 'Material: IS:319 Brass', 'Thread: BSP / NPT', 'Seal: Metal-to-Metal / Fibre'],
+    image: '/images/products/brass-reducing-union-ti.jpg',
+  },
+  {
+    name: 'Brass Pipe Fittings (Flanged)',
+    category: 'Brass Fittings',
+    desc: 'Heavy-duty flanged brass pipe fittings for industrial piping systems. Available as elbows, tees, crosses, and adapters with drilled flange connections to IS and BS standards.',
+    specs: ['Sizes: 15 mm – 100 mm', 'Material: IS:319 Brass', 'Standard: IS:1538 / BS:10', 'Flange: PN10 / PN16'],
+    image: '/images/products/brass-pipe-fittings-ti.jpg',
+  },
+  {
     name: 'Gun Metal Football Valve',
     category: 'Gun Metal Valves',
     desc: 'Traditional football-type gun metal valve for water distribution networks. Robust spherical body design with hand wheel operation for reliable isolation.',
