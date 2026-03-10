@@ -840,6 +840,90 @@ const products = [
     specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Thread: BSP'],
     image: '/images/products/gun-metal-union-cap-ti.jpg',
   },
+  {
+    name: 'Premium Brass Union (Hi-Res)',
+    category: 'Brass Fittings',
+    desc: 'High-quality brass union coupling for joining pipe sections. Precision-machined with smooth internal bore for unrestricted flow. Three-piece design allows easy maintenance without disturbing pipeline alignment.',
+    specs: ['Sizes: 15 mm – 65 mm', 'Material: IS:319 Brass', 'Threads: BSP / NPT', 'Pressure: PN16'],
+    image: '/images/products/cpimg-brass-union-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Horizontal Check Valve (Premium)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium-grade horizontal check valve in gun metal LTB2. Swing-type disc with bronze seat ring ensures drip-tight shutoff. Suitable for waterworks, fire protection, and industrial process lines.',
+    specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/cpimg-gun-metal-horizontal-check-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Pressure Reducing Valve (Premium)',
+    category: 'Gun Metal Valves',
+    desc: 'Precision pressure reducing valve in gun metal for maintaining constant downstream pressure. Adjustable spring-loaded diaphragm mechanism with integral strainer. Suitable for municipal and industrial water distribution.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Inlet: Up to 16 bar', 'Material: Gun Metal LTB2', 'Adjustment: Spring-loaded'],
+    image: '/images/products/cpimg-gun-metal-pressure-reducing-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Tanker Valve (Premium)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty gun metal tanker valve designed for water tanker and mobile supply applications. Quick-opening lever operation with robust construction for frequent use in harsh conditions.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Operation: Lever', 'Material: Gun Metal LTB2', 'Application: Water tankers'],
+    image: '/images/products/cpimg-gun-metal-tanker-valve-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Union Cap (Premium)',
+    category: 'Gun Metal Valves',
+    desc: 'Precision-cast gun metal union cap for pipeline termination and dead-end sealing. Threaded BSP connection with machined seating face for leak-proof closure.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Material: Gun Metal LTB2', 'Threads: BSP', 'Finish: Machined'],
+    image: '/images/products/cpimg-gun-metal-union-cap-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Vertical O-Ring Check Valve (Premium)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium vertical check valve with O-ring seal technology for superior leak prevention. Designed for riser pipe installations in multi-storey buildings and pumping stations.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Seal: O-Ring', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/cpimg-gun-metal-vertical-oring-hires.jpg',
+  },
+  {
+    name: 'Brass Wheel Valve (Premium)',
+    category: 'Brass Valves',
+    desc: 'Premium brass wheel valve with hand wheel operation for precise flow control. Rising stem design with PTFE gland packing. Ideal for domestic plumbing and light industrial applications.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Material: IS:319 Brass', 'Operation: Hand wheel', 'Pressure: PN16'],
+    image: '/images/products/cpimg-brass-wheel-valve-hires.jpg',
+  },
+  {
+    name: 'Brass Bib Cock (Premium)',
+    category: 'Brass Cocks',
+    desc: 'Premium brass bib cock with forged body and chrome-plated handle. Suitable for outdoor taps, garden connections, and utility water points. Quarter-turn ceramic disc operation available.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Material: IS:319 Brass', 'Handle: Chrome-plated', 'Finish: Polished'],
+    image: '/images/products/cpimg-brass-big-cock-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Ferrule Cock (Premium)',
+    category: 'Gun Metal Cocks',
+    desc: 'Premium gun metal ferrule cock for service connections from water mains. Conical plug design with integral ferrule end for PE/MDPE pipe connection. Used by water utilities nationwide.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Material: Gun Metal LTB2', 'End: Ferrule / BSP', 'Application: Service connections'],
+    image: '/images/products/cpimg-gun-metal-ferrule-cock-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Flush Cock (Premium)',
+    category: 'Gun Metal Cocks',
+    desc: 'Premium gun metal flush cock for toilet cistern and urinal flushing systems. Self-closing mechanism with adjustable flow rate. Heavy-duty construction for public and commercial installations.',
+    specs: ['Sizes: 25 mm – 32 mm', 'Material: Gun Metal LTB2', 'Operation: Self-closing', 'Application: Sanitary'],
+    image: '/images/products/cpimg-gun-metal-flush-cock-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Main Cock (Premium)',
+    category: 'Gun Metal Cocks',
+    desc: 'Premium gun metal main cock for isolation of water supply mains. Conical plug with square head for key operation. Designed for underground installation with long service life.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Material: Gun Metal LTB2', 'Operation: Key-operated', 'Installation: Underground'],
+    image: '/images/products/cpimg-gun-metal-main-cock-hires.jpg',
+  },
+  {
+    name: 'Gun Metal Gate Valve (Premium)',
+    category: 'Gun Metal Valves',
+    desc: 'Premium gun metal gate valve with non-rising stem and hand wheel. Full-bore design for minimum pressure loss. Suitable for waterworks, fire protection, and industrial applications.',
+    specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/cpimg-gun-metal-gate-valve-hires.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -892,7 +976,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            96 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            129 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
