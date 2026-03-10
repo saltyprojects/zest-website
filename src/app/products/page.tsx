@@ -609,6 +609,90 @@ const products = [
     specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Ends: Screwed BSP'],
     image: '/images/products/cpimg-gun-metal-gate-valve.jpg',
   },
+  {
+    name: 'Gun Metal Check Valve (High Pressure)',
+    category: 'Gun Metal Valves',
+    desc: 'High-pressure gun metal check valve rated for PN25 service. Precision-machined swing disc with metal-to-metal seating for reliable backflow prevention in demanding water supply and fire protection applications.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-check-valve-710.jpg',
+  },
+  {
+    name: 'Gun Metal Horizontal Check Valve (Heavy Duty)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty horizontal check valve with reinforced body and bolted cover for easy maintenance. Designed for high-flow water mains, pumping stations, and industrial process lines.',
+    specs: ['Sizes: 40 mm – 150 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-horizontal-check-valve-720.jpg',
+  },
+  {
+    name: 'Gun Metal Vertical Check Valve (Spring Loaded)',
+    category: 'Gun Metal Valves',
+    desc: 'Spring-loaded vertical check valve for positive closure in riser pipe systems. Stainless steel spring ensures rapid seating even at low differential pressures.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-vertical-check-valve-719.jpg',
+  },
+  {
+    name: 'Gun Metal Gate Valve (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged gun metal gate valve with non-rising stem and solid wedge disc. Designed for buried service and water distribution networks requiring full-bore unrestricted flow.',
+    specs: ['Sizes: 50 mm – 150 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Ends: Flanged IS:1538'],
+    image: '/images/products/gun-metal-gate-valve-438.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve (Full Bore)',
+    category: 'Gun Metal Valves',
+    desc: 'Full-bore gun metal ball valve with quarter-turn lever operation. Blow-out proof stem with PTFE seats and stainless steel trim. Suitable for water, oil, and gas service.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: Gun Metal LTB2', 'Seat: Virgin PTFE'],
+    image: '/images/products/gun-metal-ball-valve-415.jpg',
+  },
+  {
+    name: 'Gun Metal Flush Cock (Heavy Pattern)',
+    category: 'Gun Metal Cocks',
+    desc: 'Heavy-pattern flush cock with delay action self-closing mechanism. Adjustable flush volume and duration settings. Chrome-plated lever for hygienic public washroom installations.',
+    specs: ['Sizes: 25 mm – 40 mm', 'Pressure: PN10', 'Material: Gun Metal LTB2', 'Type: Delay Action'],
+    image: '/images/products/gun-metal-flush-cock-056.jpg',
+  },
+  {
+    name: 'Gun Metal Pressure Reducing Valve (Direct Acting)',
+    category: 'Gun Metal Valves',
+    desc: 'Direct-acting pressure reducing valve with adjustable downstream pressure setting. Integral strainer and pressure gauge port. Essential for multi-storey water supply systems.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 inlet', 'Material: Gun Metal LTB2', 'Type: Direct Acting'],
+    image: '/images/products/gun-metal-pressure-reducing-valve-495.jpg',
+  },
+  {
+    name: 'Gun Metal Wheel Valve (Screwed)',
+    category: 'Gun Metal Valves',
+    desc: 'Screwed-end gun metal wheel valve with rising handwheel for visual position indication. Globe-type design for throttling and isolation duty in water and steam service.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Type: Globe Pattern'],
+    image: '/images/products/gun-metal-wheel-valve-218.jpg',
+  },
+  {
+    name: 'Gun Metal Angle Valve (Fire Service)',
+    category: 'Gun Metal Valves',
+    desc: 'Fire service angle valve with instantaneous coupling outlet for fire hydrant and hose reel connections. Heavy-duty handwheel with non-rising stem design.',
+    specs: ['Sizes: 40 mm – 65 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Outlet: Instantaneous'],
+    image: '/images/products/gun-metal-angle-valve-537.jpg',
+  },
+  {
+    name: 'Brass Wheel Valve (Economy)',
+    category: 'Brass Valves',
+    desc: 'Economy-grade brass wheel valve for residential plumbing and light commercial applications. Rising stem with hand wheel operation and renewable gland packing.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN10', 'Material: IS:319 Brass', 'Type: Rising Stem'],
+    image: '/images/products/brass-wheel-valve-225.jpg',
+  },
+  {
+    name: 'Gun Metal Bib Ferrule Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Combination bib-ferrule valve for service connections from water mains to consumer meters. Integral ferrule end with compression fitting for HDPE pipe connections.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gunmetal-bib-ferrule-valve-302.jpg',
+  },
+  {
+    name: 'Brass Ball Valve (Compact Body)',
+    category: 'Brass Valves',
+    desc: 'Compact-body brass ball valve with reduced face-to-face dimension for tight installations. Full-port bore with chrome-plated ball and reinforced PTFE seats.',
+    specs: ['Sizes: 15 mm – 40 mm', 'Pressure: PN25', 'Material: IS:319 Brass', 'Type: Two-Piece Compact'],
+    image: '/images/products/brass-ball-valve-im-500.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -661,7 +745,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            84 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            96 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
