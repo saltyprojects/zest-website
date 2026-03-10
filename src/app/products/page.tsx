@@ -288,11 +288,39 @@ const products = [
     image: '/images/products/industrial-angle-valve-ti.jpg',
   },
   {
-    name: 'Gun Metal Bib Ferrule Valve',
+    name: 'Gun Metal Bib Ferrule Valve (Heavy Duty)',
     category: 'Gun Metal Valves',
     desc: 'Heavy-duty gun metal bib ferrule valve combining bib cock and ferrule functions. Designed for water meter and service line installations requiring tamper-proof shut-off.',
     specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
     image: '/images/products/gunmetal-bib-ferrule-valve.jpg',
+  },
+  {
+    name: 'Brass Bib Cock (Industrial)',
+    category: 'Brass Cocks',
+    desc: 'Industrial-grade brass bib cock with reinforced body and extended spindle. Suitable for factory washdown, outdoor taps, and heavy commercial plumbing applications.',
+    specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Finish: Natural Brass'],
+    image: '/images/products/brass-bib-cock-ti.jpg',
+  },
+  {
+    name: 'Brass Union (Heavy Pattern)',
+    category: 'Brass Fittings',
+    desc: 'Heavy-pattern brass union with reinforced barrel for high-pressure pipeline connections. Three-piece design allows easy disassembly without disturbing adjacent piping.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: IS:319 Brass', 'Seal: Fibre / Metal'],
+    image: '/images/products/brass-union-ti.jpg',
+  },
+  {
+    name: 'Gun Metal Check Valve (Heavy Pattern)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-pattern gun metal check valve with reinforced body and renewable seat. Designed for high-pressure water mains, pumping stations, and fire protection systems.',
+    specs: ['Sizes: 25 mm – 150 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-check-valve-ti.jpg',
+  },
+  {
+    name: 'Gun Metal Flush Cock (Concealed)',
+    category: 'Gun Metal Cocks',
+    desc: 'Concealed-type gun metal flush cock for built-in wall installations. Self-closing mechanism with adjustable flush volume for water-efficient sanitary fittings.',
+    specs: ['Sizes: 25 mm & 32 mm', 'Type: Concealed / Self-Closing', 'Material: Gun Metal LTB2', 'Flow: Adjustable'],
+    image: '/images/products/gun-metal-flush-cock-ti.jpg',
   },
   {
     name: 'Gun Metal Football Valve (Heavy Pattern)',
@@ -388,7 +416,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            45 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            49 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
