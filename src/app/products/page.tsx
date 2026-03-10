@@ -273,6 +273,20 @@ const products = [
     specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16 / PN25', 'Material: IS:319 Brass', 'Seat: PTFE'],
     image: '/images/products/brass-ball-valve-im2.jpg',
   },
+  {
+    name: 'Gun Metal Check Valve (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged gun metal check valve for large-diameter municipal water mains and pumping stations. PN16 rated flanged ends for bolted pipeline connections. Swing-type disc for minimal pressure loss.',
+    specs: ['Sizes: 50 mm – 200 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Ends: Flanged to IS:1538'],
+    image: '/images/products/gun-metal-check-valve-flanged.jpg',
+  },
+  {
+    name: 'Industrial Angle Valve',
+    category: 'Brass Valves',
+    desc: 'Heavy-duty industrial angle valve for steam, compressed air, and process piping. Precision-lapped disc and seat for reliable shut-off in demanding operating conditions.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
+    image: '/images/products/industrial-angle-valve-ti.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -325,7 +339,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            36 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            38 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
