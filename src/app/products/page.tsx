@@ -469,6 +469,48 @@ const products = [
     specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Ends: Flanged'],
     image: '/images/products/industrial-angle-valve-fp.jpg',
   },
+  {
+    name: 'Gun Metal Ball Valve (Quarter Turn)',
+    category: 'Gun Metal Valves',
+    desc: 'Quarter-turn gun metal ball valve with compact body design for water distribution and fire protection systems. Full-port bore with stainless steel ball and reinforced PTFE seats for long service life.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Seat: Reinforced PTFE'],
+    image: '/images/products/ball-valves-im.jpg',
+  },
+  {
+    name: 'Gun Metal Ferrule Valve (Screwed)',
+    category: 'Gun Metal Valves',
+    desc: 'Precision-machined gun metal ferrule valve for water meter connections and service line isolation. Compact body with BSP threads and compression end for PE pipe connections.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/ferrule-valves-im.jpg',
+  },
+  {
+    name: 'Gun Metal Vertical Check Valve (Compact)',
+    category: 'Gun Metal Valves',
+    desc: 'Compact vertical check valve in gun metal LTB2 for tight riser pipe installations. Lightweight design with guided disc and stainless steel spring for reliable backflow prevention.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Type: Spring-Loaded'],
+    image: '/images/products/vertical-check-valves-im.jpg',
+  },
+  {
+    name: 'Gun Metal Angle Valve (Economy)',
+    category: 'Gun Metal Valves',
+    desc: 'Economy-grade gun metal angle valve for general plumbing and water supply applications. Sand-cast body with machined BSP threads and renewable gland packing.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Connection: BSP Screwed'],
+    image: '/images/products/angle-valves-im2.jpg',
+  },
+  {
+    name: 'Gun Metal Football Valve (Quarter Turn)',
+    category: 'Gun Metal Valves',
+    desc: 'Quarter-turn football-type valve with spherical body profile for underground water distribution networks. Designed for direct burial with tamper-proof operation and full-bore flow.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Operation: Quarter Turn'],
+    image: '/images/products/gun-metal-football-valve-im3.jpg',
+  },
+  {
+    name: 'Industrial Ball Valve (Compact)',
+    category: 'Brass Valves',
+    desc: 'Compact industrial ball valve in forged brass for process piping, compressed air, and utility systems. Two-piece body with blow-out proof stem and anti-static device.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN40', 'Material: IS:319 Forged Brass', 'Type: Two-Piece'],
+    image: '/images/products/industrial-ball-valve-im3.jpg',
+  },
 ]
 
 /* ── Schema ─── */
