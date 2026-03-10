@@ -287,6 +287,55 @@ const products = [
     specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
     image: '/images/products/industrial-angle-valve-ti.jpg',
   },
+  {
+    name: 'Gun Metal Bib Ferrule Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty gun metal bib ferrule valve combining bib cock and ferrule functions. Designed for water meter and service line installations requiring tamper-proof shut-off.',
+    specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Standard: IS:2692'],
+    image: '/images/products/gunmetal-bib-ferrule-valve.jpg',
+  },
+  {
+    name: 'Gun Metal Football Valve (Heavy Pattern)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-pattern football valve with reinforced spherical body for high-pressure water distribution mains. Large bore design minimises flow restriction.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Standard: IS:778'],
+    image: '/images/products/gun-metal-football-valve-im2.jpg',
+  },
+  {
+    name: 'Brass Stop Cock (Compression End)',
+    category: 'Brass Cocks',
+    desc: 'Premium brass stop cock with compression end connections for easy installation without threading. Ideal for underground mains isolation and residential water supply.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Ends: Compression'],
+    image: '/images/products/brass-stop-cock.jpg',
+  },
+  {
+    name: 'Brass Ferrule Valve',
+    category: 'Brass Valves',
+    desc: 'Brass ferrule valve for water meter connections and service line isolation. Quarter-turn operation with lock-shield option for tamper-proof utility installations.',
+    specs: ['Sizes: 15 mm & 20 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Standard: IS:2692'],
+    image: '/images/products/ferrule-valve-im-500.jpg',
+  },
+  {
+    name: 'Fine Finish Industrial Angle Valve',
+    category: 'Brass Valves',
+    desc: 'Precision-machined industrial angle valve with mirror-polished finish. Designed for high-visibility installations in commercial buildings and process plants.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: IS:319 Brass', 'Finish: Mirror Polish'],
+    image: '/images/products/fine-finish-industrial-angle-valve-ti.jpg',
+  },
+  {
+    name: 'Industrial Brass Angle Valve',
+    category: 'Brass Valves',
+    desc: 'Robust brass angle valve for steam, hot water, and compressed air systems. Integral strainer option with renewable seat disc for extended service life.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Thread: BSP / NPT'],
+    image: '/images/products/industrial-brass-angle-valve.jpg',
+  },
+  {
+    name: 'Football Ball Valve',
+    category: 'Gun Metal Valves',
+    desc: 'Football-type ball valve combining the spherical body profile with modern ball valve internals. Quarter-turn operation with full-bore flow path for water distribution networks.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Operation: Lever'],
+    image: '/images/products/football-ball-valve-im-500.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -339,7 +388,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            38 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            45 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
