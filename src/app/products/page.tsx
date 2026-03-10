@@ -364,6 +364,111 @@ const products = [
     specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Operation: Lever'],
     image: '/images/products/football-ball-valve-im-500.jpg',
   },
+  {
+    name: 'Gun Metal Angle Valve (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged-end gun metal angle valve for fire hydrant, boiler, and high-pressure piping installations. Robust body with renewable disc and gland packing.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN25 / PN40', 'Material: Gun Metal LTB2', 'Ends: Flanged'],
+    image: '/images/products/gun-metal-angle-valve-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Ball Valve (Lever Operated)',
+    category: 'Gun Metal Valves',
+    desc: 'Lever-operated gun metal ball valve for quick isolation in marine, waterworks, and fire protection applications. Full-bore with PTFE seats and blow-out proof stem.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Operation: Lever'],
+    image: '/images/products/gun-metal-ball-valve-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Gate Valve (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged gun metal gate valve for municipal water distribution and pumping stations. Non-rising stem design with hand wheel operation and bolted bonnet.',
+    specs: ['Sizes: 50 mm – 200 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Ends: Flanged IS:1538'],
+    image: '/images/products/gun-metal-gate-valve-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Wheel Valve (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged gun metal wheel valve for precise throttling in high-pressure waterworks and industrial systems. Globe-type disc with renewable seat ring.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN25', 'Material: Gun Metal LTB2', 'Ends: Flanged'],
+    image: '/images/products/gun-metal-wheel-valve-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Flush Cock (Exposed)',
+    category: 'Gun Metal Cocks',
+    desc: 'Exposed-type gun metal flush cock for surface-mounted installations in commercial washrooms. Self-closing with adjustable flush duration and anti-vandal features.',
+    specs: ['Sizes: 25 mm & 32 mm', 'Type: Exposed / Self-Closing', 'Material: Gun Metal LTB2', 'Flow: Adjustable'],
+    image: '/images/products/gun-metal-flush-cock-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Pressure Reducing Valve (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged gun metal pressure reducing valve for large-diameter mains. Pilot-operated diaphragm mechanism for stable downstream pressure regulation in municipal networks.',
+    specs: ['Sizes: 50 mm – 150 mm', 'Inlet: Up to 25 bar', 'Material: Gun Metal LTB2', 'Ends: Flanged'],
+    image: '/images/products/gun-metal-pressure-reducing-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Union Cap (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged gun metal union cap for large-bore pipeline end closure. Heavy-duty construction with gasket seal for water mains and fire protection systems.',
+    specs: ['Sizes: 50 mm – 150 mm', 'Material: Gun Metal LTB2', 'Ends: Flanged IS:1538', 'Seal: Gasket'],
+    image: '/images/products/gun-metal-union-cap-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Check Valve (Flanged Heavy)',
+    category: 'Gun Metal Valves',
+    desc: 'Heavy-duty flanged check valve for pumping stations and municipal water supply mains. Swing-type disc with external lever and counterweight option.',
+    specs: ['Sizes: 50 mm – 200 mm', 'Pressure: PN16 / PN25', 'Material: Gun Metal LTB2', 'Ends: Flanged'],
+    image: '/images/products/gun-metal-check-valve-fp.jpg',
+  },
+  {
+    name: 'Gun Metal Bib Ferrule Valve (Flanged)',
+    category: 'Gun Metal Valves',
+    desc: 'Flanged gun metal bib ferrule valve for large service connections and water meter installations. Combined isolation and metering access in one unit.',
+    specs: ['Sizes: 25 mm – 50 mm', 'Pressure: PN16', 'Material: Gun Metal LTB2', 'Ends: Flanged'],
+    image: '/images/products/gunmetal-bib-ferrule-fp.jpg',
+  },
+  {
+    name: 'Brass Angle Valve (Chrome Plated)',
+    category: 'Brass Valves',
+    desc: 'Chrome-plated brass angle valve for high-end plumbing installations in hotels, hospitals, and commercial buildings. Mirror finish with quarter-turn ceramic disc.',
+    specs: ['Sizes: 15 mm – 25 mm', 'Pressure: PN16', 'Material: IS:319 Brass', 'Finish: Chrome Plated'],
+    image: '/images/products/angle-valve-im-500.jpg',
+  },
+  {
+    name: 'Brass Ball Valve (Forged)',
+    category: 'Brass Valves',
+    desc: 'Forged brass ball valve with enhanced pressure rating for industrial and process applications. Full-bore design with stainless steel ball and PTFE seats.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN40 / PN64', 'Material: Forged IS:319 Brass', 'Seat: PTFE'],
+    image: '/images/products/brass-ball-valve-im.jpg',
+  },
+  {
+    name: 'Brass Gate Valve (Heavy Pattern)',
+    category: 'Brass Valves',
+    desc: 'Heavy-pattern brass gate valve with reinforced body and bonnet for high-pressure installations. Rising stem with visual position indicator and solid wedge gate.',
+    specs: ['Sizes: 15 mm – 50 mm', 'Pressure: PN25', 'Material: IS:319 Brass', 'Type: Rising Stem'],
+    image: '/images/products/brass-gate-valve-im.jpg',
+  },
+  {
+    name: 'Brass Wheel Valve (Flanged)',
+    category: 'Brass Valves',
+    desc: 'Flanged brass wheel valve for industrial piping systems. Globe-type design with hand wheel for precise flow regulation in water, steam, and compressed air.',
+    specs: ['Sizes: 25 mm – 50 mm', 'Pressure: PN25', 'Material: IS:319 Brass', 'Ends: Flanged'],
+    image: '/images/products/brass-wheel-valve-fp.jpg',
+  },
+  {
+    name: 'Industrial Ball Valve (Heavy Duty)',
+    category: 'Brass Valves',
+    desc: 'Heavy-duty industrial ball valve for process plants and utility systems. Reinforced body with anti-blow-out stem, fire-safe design, and lockable lever handle.',
+    specs: ['Sizes: 25 mm – 100 mm', 'Pressure: PN40 / PN64', 'Material: IS:319 Brass', 'Type: Fire-Safe'],
+    image: '/images/products/industrial-ball-valve-im2.jpg',
+  },
+  {
+    name: 'Industrial Angle Valve (Flanged)',
+    category: 'Brass Valves',
+    desc: 'Flanged industrial angle valve for steam boilers, pressure vessels, and process piping. Heavy-duty construction with bolted bonnet and renewable disc.',
+    specs: ['Sizes: 25 mm – 80 mm', 'Pressure: PN25 / PN40', 'Material: IS:319 Brass', 'Ends: Flanged'],
+    image: '/images/products/industrial-angle-valve-fp.jpg',
+  },
 ]
 
 /* ── Schema ─── */
@@ -416,7 +521,7 @@ export default function Products() {
             Our <span className="text-brass">Products</span>
           </h1>
           <p className="mt-4 max-w-3xl font-body text-lg text-gray-300">
-            49 premium brass and gun metal products — valves, cocks, and fittings manufactured
+            64 premium brass and gun metal products — valves, cocks, and fittings manufactured
             to IS:778, IS:319, and BS:5154 standards in our Jalandhar facility since 1998.
           </p>
         </div>
